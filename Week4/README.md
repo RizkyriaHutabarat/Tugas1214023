@@ -208,7 +208,7 @@ go mod tidy
 
 ### Testing Fungsi
 
-Buat file dengan format {namafile}_testing.go
+Buat file dengan format {namafile}_test.go
 ```go
 package namapackage
 
