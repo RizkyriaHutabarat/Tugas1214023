@@ -46,12 +46,12 @@ func InsertPendaftaran(kdpendaftar int, biodata Camaba, asalsekolah DaftarSekola
 }
 
 func InsertDaftarCamaba(ktp int, nama string, phone_number string, alamat string) (InsertedID interface{}) {
-	var daftarSekolah Camaba
-	daftarSekolah.Ktp = ktp
-	daftarSekolah.Nama = nama
-	daftarSekolah.Phone_number = phone_number
-	daftarSekolah.Address = alamat
-	return InsertOneDoc("db_pmb", "daftar_camaba", daftarSekolah)
+	var daftarCamaba Camaba
+	daftarCamaba.Ktp = ktp
+	daftarCamaba.Nama = nama
+	daftarCamaba.Phone_number = phone_number
+	daftarCamaba.Address = alamat
+	return InsertOneDoc("db_pmb", "daftar_camaba", daftarCamaba)
 }
 
 func InsertDaftarSekolah(kodesklh int, nama string, phone_number string, alamat string) (InsertedID interface{}) {
