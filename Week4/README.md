@@ -49,7 +49,7 @@ Dalam memilih basis data skala enterprise harus mengacu pada hasil survey [Gartn
 
 ## Pengembangan Backend
 
-Pada sesi ini pastikan anda sudah mendaftarkan diri ke heroku. Kemudian kita akan mencoba mengembangkan package golang. Langkah untuk membuat backend di golang :
+Pada sesi ini kita akan mencoba mengembangkan package golang. Langkah untuk membuat backend di golang :
 
 - Instalasi golang (https://go.dev/dl/)
 - Definisikan dahulu struct
@@ -61,7 +61,7 @@ Pada sesi ini pastikan anda sudah mendaftarkan diri ke heroku. Kemudian kita aka
 Komunikasi di golang menggunakan json dipermudah dengan adanya struct type. Struct type ini akan mendefinisikan bagaimana bentuk json yang berkomunikasi dari frontend menuju backend. Sebelumnya inisiasi dulu package yang akan kita buat, masuk ke folder kerja kita dan lakukan inisialisasi package
 
 ```sh
-go mod init github.com/{username github kalian}/WS/Chapter04/Site/{NPM masing-masing}
+go mod init github.com/{username github kalian}/{nama repo kalian}/Week4/Site/{NPM masing-masing}
 ```
 ![image](https://user-images.githubusercontent.com/26703717/224059826-1497e750-265e-4442-9db7-123e30301736.png)
 
@@ -148,7 +148,10 @@ package namapackage
 import (
 	"context"
 	"fmt"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"os"
+	"time"
 
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -205,7 +208,7 @@ go mod tidy
 
 ### Testing Fungsi
 
-Buat file dengan format {namafile}_testing.go
+Buat file dengan format {namafile}_test.go
 ```go
 package namapackage
 
@@ -272,3 +275,5 @@ go list -m github.com/indrariksa/ws@v0.0.1
 ```
 ![image](https://user-images.githubusercontent.com/26703717/224067365-a49bf33b-b0a8-4b54-a3ef-44970adaa7da.png)
 ![image](https://user-images.githubusercontent.com/26703717/224067762-89dcb21e-a9a7-4453-91eb-a83e319be717.png)
+
+Jika sudah seharusnya package kalian ada di [pkg.go.dev](https://pkg.go.dev/). Butuh waktu mungkin sekitar 1 minggu untuk rilis
