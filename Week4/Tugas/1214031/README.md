@@ -1,6 +1,6 @@
 ## LINK
 
-## MongoDB Compass
+## MongoDB Compasss
 
 ![image.png](<https://github.com/erditona/Pemrog3WebService/blob/main/Week4/Tugas/1214031/ss/pendaftaranMaba(1).png>)
 
