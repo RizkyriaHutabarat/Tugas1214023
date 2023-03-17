@@ -257,7 +257,7 @@ MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
 ```
 ![image](https://user-images.githubusercontent.com/26703717/225520322-d4937d5a-bbea-47a8-9678-887a66e022b0.png)
 
-Edit dan tambahkan konfigurasi nama database yang dipakai pada file db.go folder config
+Edit dan tambahkan konfigurasi nama database yang dipakai pada file db.go folder config (untuk DBName pada Mongo diubah saja menjadi tes_db seperti di pertemuan ke-4)
 
 ```go
 var DBUlbimariainfo = atdb.DBInfo{
