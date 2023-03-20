@@ -32,5 +32,7 @@
       * Daftar URL Heroku app yang sudah memanggil function di package masing-masing mahasiswa yang sudah publish di https://pkg.go.dev/. [contoh](https://ws-ulbi.herokuapp.com/presensi) beserta skinsutannya (nilai 25 per URL) jika terdapat 3 url atau 3 endpoint maka sertakan 3 URL
       * URL Package yang sudah publish di pkg.go.dev dari https://github.com/{Repo Mahasiswa}/{Nama Repo Backend} beserta skinsutannya (nilai 20)
     * Skrinsutan isi mongodb dari mongocompass yang sudah berisi data dummy kasus (nilai 15 per collection atau tabel)
+    
+* Deadline hari Jum'at, 24 Maret 2023. Melebihi itu ada diskon nilai.
 
   
