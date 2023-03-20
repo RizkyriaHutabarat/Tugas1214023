@@ -1,4 +1,4 @@
-## Link repo baru
+## Link repo boilerplate
 
 https://github.com/Fatwaff/ws-fatwa
 
