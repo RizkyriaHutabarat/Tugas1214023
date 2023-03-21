@@ -39,8 +39,8 @@ Tampilan jika sudah mendaftar Heroku
 Tunggu beberapa menit atau jam hingga credit pada heroku bertambah seperti gambar di bawah
 ![image](https://user-images.githubusercontent.com/26703717/225510369-9da2a2e8-2099-40b4-bcf4-11f3a5e51fdb.png)
 
-## Dashboard Heroku dan Heroku cli
-Sebelum mulai kita subscribe eco dyno pada heroku, di menu Billing
+## Dashboard Heroku dan Heroku CLI (catatan : JIKA CREDIT HEROKU MASIH $0 jangan lanjut dulu ke tahap ini)
+Sebelum mulai kita subscribe eco dyno pada heroku, di menu Billing 
 ![image](https://user-images.githubusercontent.com/26703717/225517047-8c697835-602d-4ef5-ac8d-2ea39729d6ef.png)
 
 Setelah login, masuk ke laman https://dashboard.heroku.com/apps. Maka akan muncul list aplikasi yang sudah kita buat. Klik New dan pilih Create new app untuk melakukan deployment aplikasi baru kita.
@@ -257,7 +257,7 @@ MONGOSTRING=mongodb+srv://username:password@cluster0.wghp85v.mongodb.net/test
 ```
 ![image](https://user-images.githubusercontent.com/26703717/225520322-d4937d5a-bbea-47a8-9678-887a66e022b0.png)
 
-Edit dan tambahkan konfigurasi nama database yang dipakai pada file db.go folder config
+Edit dan tambahkan konfigurasi nama database yang dipakai pada file db.go folder config (untuk DBName pada Mongo diubah saja menjadi tes_db seperti di pertemuan ke-4)
 
 ```go
 var DBUlbimariainfo = atdb.DBInfo{
