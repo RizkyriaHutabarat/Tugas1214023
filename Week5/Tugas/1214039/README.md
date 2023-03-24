@@ -38,7 +38,7 @@
 
 ![pakagego2](https://user-images.githubusercontent.com/110885840/227542294-c6318fd0-61d6-4ae3-af37-1aa52244e402.png)
 
-3. Mongodb
+3. Mongodb Compass
 
 ![mongob waktu](https://user-images.githubusercontent.com/110885840/227540435-5f1680e9-742c-41dc-941d-5e22f03090e5.png)
 
