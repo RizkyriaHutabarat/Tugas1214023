@@ -5,11 +5,11 @@
 2. https://ws-dito.herokuapp.com/pendaftaran
    ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-pendaftaran.png)
 3. https://ws-dito.herokuapp.com/daftar-camaba  
-   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftaraCamaba.png)
+   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftarCamaba.png)
 4. https://ws-dito.herokuapp.com/daftar-sekolah
-   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftaraSekolah.png)
-5. https://ws-dito.herokuapp.com/daftar-camaba  
-   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftaraSekolah.png)
+   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftarSekolah.png)
+5. https://ws-dito.herokuapp.com/daftar-jurusan
+   ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/heroku-daftarJurusan.png)
 
 # URL Repo Backend
 
