@@ -16,7 +16,7 @@
 https://pkg.go.dev/github.com/erditona/be_pmb
 ![be_presensi](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/be_pmb.png)
 
-# URL MongoDB
+# MongoDB Compass
 
 1. Pendaftaran
    ![pendaftaran](https://github.com/erditona/Pemrog3WebService/blob/main/Week5/Tugas/1214031/ss/mongoDb-pendaftaran.png)
