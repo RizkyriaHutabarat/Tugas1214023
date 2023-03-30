@@ -17,6 +17,7 @@
   ```
   ![image](https://user-images.githubusercontent.com/26703717/225911044-28bd321d-8502-499d-b818-c69f06782aaa.png)
   Buka link tanda merah di atas di browser untuk testing, jika semua fungsi, url atau endpoint sudah aman maka langsung saja push ke repo github dan ke heroku
+  * Contoh boiler plate saya untuk Get All Data https://github.com/indrariksa/ws-ulbi (ada pada folder controller dan url)
 
 * Boiler plate sudah diisi dengan pemanggilan package backend yang sudah kalian buat dan dilisting di https://pkg.go.dev/. *Package backend adalah repository yang dibuat pada poin ke-3
   
