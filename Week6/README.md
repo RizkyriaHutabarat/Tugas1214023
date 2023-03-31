@@ -117,7 +117,7 @@ Setelah itu gunakan template frontend https://github.com/indrariksa/WS/tree/main
 
 Hal yang pertama kali kita lakukan adalah membuka file index.html dan menambahkan tag di dalam section head untuk memanggil file js/fetch.js.
 ```html
-<script type="module" src="../js/controller/fetch.js"></script>
+<script type="module" src="../js/fetch.js"></script>
 ```
 ![image](https://user-images.githubusercontent.com/26703717/228425589-dd68591d-a724-4167-a259-0f78b80a5c64.png)
 
@@ -162,11 +162,11 @@ Simpan, commit dan push ke heroku kemudian kita ujicoba lagi frontend kita. Liat
 
 ![image](https://user-images.githubusercontent.com/26703717/228432421-db88bb22-1096-4bbe-9e1f-f083dd080434.png)
 
-Karena hasil dari backend berupa array dari json object. maka kita ubah kode program tambahkan looping foreach pada croot.js
+Karena hasil dari backend berupa array dari json object. maka kita ubah kode program tambahkan looping foreach pada fetch.js
 ```js
-import { get } from "https://jscroot.github.io/api/croot.js";
-import { setInner } from "https://jscroot.github.io/element/croot.js";
-let urlAPI = "https://gocroot.herokuapp.com/presensi";
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { setInner } from "https://bukulapak.github.io/element/process.js";
+let urlAPI = "https://ws-ulbi.herokuapp.com/presensi";
 get(urlAPI,isiTablePresensi);
 function isiTablePresensi(results){
     console.log(results);
@@ -239,7 +239,7 @@ kita ubah fetch.js lagi menjadi
 import { get } from "https://bukulapak.github.io/api/process.js";
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
-import { isiTabel } from "./temp/table.js";
+import { isiTabel } from "./table.js";
 let urlAPI = "https://ws-ulbi.herokuapp.com/presensi";
 get(urlAPI, isiTablePresensi);
 function isiTablePresensi(results) {
@@ -279,7 +279,7 @@ file config/url.js berisi :
 ```js
 export let urlAPI = "https://ws-ulbi.herokuapp.com/presensi";
 ```
-file controller/table.js berisi :
+file controller/get.js berisi :
 ```js
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
