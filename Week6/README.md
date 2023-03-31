@@ -279,7 +279,7 @@ file config/url.js berisi :
 ```js
 export let urlAPI = "https://ws-ulbi.herokuapp.com/presensi";
 ```
-file controller/table.js berisi :
+file controller/get.js berisi :
 ```js
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
