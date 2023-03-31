@@ -111,7 +111,7 @@ git clone {hasil copas dari https}
 Contoh : git clone https://github.com/indrariksa/fe_presensi.git
 ```
 
-Setelah itu gunakan template frontend https://github.com/indrariksa/tes_ws/tree/main/Chapter06/Site/TEMP kemudian simpan pada directory repo kalian (contoh copy paste hasil download template ke dalam folder fe_presensi yang merupakan repo yang baru diclone). Kemudian buka pada VScode.
+Setelah itu gunakan template frontend https://github.com/indrariksa/tes_ws/tree/main/Week6/Site/TEMP kemudian simpan pada directory repo kalian (contoh copy paste hasil download template ke dalam folder fe_presensi yang merupakan repo yang baru diclone). Kemudian buka pada VScode.
 
 ![image](https://user-images.githubusercontent.com/26703717/228428862-bac7ccd1-f221-471d-8a8e-af8a0d752a16.png)
 
