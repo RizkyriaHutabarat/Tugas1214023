@@ -4,7 +4,7 @@ https://dimasardnt6-ulbi.herokuapp.com/presensi
 
 https://dimasardnt6-ulbi.herokuapp.com/presensi/640af1a26966b70f7fc9b4ed
 
-# Url FE Github Pages
+# Url FE Github Page
 
 https://dimasardnt6.github.io/fe_presensi/template/
 
