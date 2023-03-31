@@ -1,3 +1,8 @@
+# DATA
+
+1. https://ws-nilai.herokuapp.com/presensinew
+2. https://ws-nilai.herokuapp.com/presensinew/6412ce78686d9e9ba557cf8a
+
 # URL TUGAS FRONTEND
 
 https://febriand1.github.io/frontend/template/
