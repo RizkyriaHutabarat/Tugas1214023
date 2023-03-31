@@ -2,7 +2,7 @@
 
 http://jaehyun.herokuapp.com/presensi
 
-http://jaehyun.herokuapp.com/presensi/6409f5a95d653451dc887146
+http://jaehyun.herokuapp.com/presensi/640ab1f869f31c99838f30be
 
 # LINK URL FE Github Pages
 
