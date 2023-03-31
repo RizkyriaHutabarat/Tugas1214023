@@ -1,7 +1,13 @@
-# Gambar HASIL FE_PRESENSI
-
-![Hasil fe_presensi](https://user-images.githubusercontent.com/94597289/229102402-ea9c21e9-4737-4e84-8d67-e8ad4c864b75.png)
-
-# LINK URL HEROKU APP FE_PRESENSI
+# LINK URL BE HEROKU APP
 
 http://jaehyun.herokuapp.com/presensi
+
+http://jaehyun.herokuapp.com/presensi/6409f5a95d653451dc887146
+
+# LINK URL FE Github Pages
+
+https://stefanymelda.github.io/fe_presensi/template/index.html
+
+# Screenshoot HASIL FE_PRESENSI
+
+![Hasil fe_presensi](https://user-images.githubusercontent.com/94597289/229102402-ea9c21e9-4737-4e84-8d67-e8ad4c864b75.png)
