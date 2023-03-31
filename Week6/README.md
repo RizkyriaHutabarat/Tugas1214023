@@ -117,7 +117,7 @@ Setelah itu gunakan template frontend https://github.com/indrariksa/WS/tree/main
 
 Hal yang pertama kali kita lakukan adalah membuka file index.html dan menambahkan tag di dalam section head untuk memanggil file js/fetch.js.
 ```html
-<script type="module" src="../js/controller/fetch.js"></script>
+<script type="module" src="../js/fetch.js"></script>
 ```
 ![image](https://user-images.githubusercontent.com/26703717/228425589-dd68591d-a724-4167-a259-0f78b80a5c64.png)
 
