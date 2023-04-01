@@ -2,7 +2,7 @@
 https://ws-dani.herokuapp.com/dhs-all
 
 # Url Github FE
-https://daniferdinandall.github.io/fe_dhs/template/index.html
+https://github.com/daniferdinandall/fe_dhs
 
 # Url FE Github Pages
 https://daniferdinandall.github.io/fe_dhs/template/index.html
