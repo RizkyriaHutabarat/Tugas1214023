@@ -254,8 +254,8 @@ https://febriand1.github.io/frontend_uts/template/
 
 # 6. Skrinsut Frontend
 
-![fe1](https://user-images.githubusercontent.com/110885840/230625020-792b60fd-ca86-4ea3-a7da-879b8f1b8136.png)
+![fe 1](https://user-images.githubusercontent.com/110885840/230782512-c5965248-0fe8-49fe-ad16-baae8a290799.png)
 
-![fe2](https://user-images.githubusercontent.com/110885840/230625026-0a87041b-f508-44d0-8c0e-309b1795d1cd.png)
+![fe 2](https://user-images.githubusercontent.com/110885840/230782509-5c22fd3d-1181-49b6-a9c7-7970569a6573.png)
 
 ---
