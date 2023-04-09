@@ -1,9 +1,6 @@
 # 1. Source Code dan Penjelasan
 
-Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20.
-Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser.
-Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4.
-Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20. Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser. Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4. Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
 
 Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
 
