@@ -1,0 +1,229 @@
+# 1. Source Code dan Penjelasan
+
+Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20.
+Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser.
+Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4.
+Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+
+Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
+
+```
+go get github.com/febriand1/nilai
+```
+
+Jika sudah berhasil, import pakage pada `controller/coba.go` dengan menginisialisasikan pakage seperti dibawah ini.
+
+```
+inimodel "github.com/Febriand1/Nilai/Model"
+inimodul "github.com/Febriand1/Nilai/Module"
+```
+
+Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke pkg.go.dev.
+
+```
+func GetAllNilai(c *fiber.Ctx) error {
+	ps := inimodul.GetAllNilai(config.Ulbimongoconn, "nilai")
+	return c.JSON(ps)
+}
+```
+
+Lalu rapikan dependensi dengan mengetikkan perintah berikut pada terminal dan jalankan.
+
+```
+go mod tidy
+go run main.go
+```
+
+Akan muncul link pada terminal, dan buka link tersebut lalu tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai.
+Jika data sudah tampil, langkah selanjutnya lakukan push ke heroku dengan mengetikkan perintah berikut pada terminal.
+
+```
+git status
+git add.
+git status
+git commit -m "bebas isi apa aja"
+git push
+git push heroku main
+```
+
+Lalu pada terminal akan menampilkan link heroku, klik link tersebut dan tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai seperti pada bagian [no 2](#2-url-heroku).
+
+Setelah itu lanjutkan ke frontend dengan membuatkan repositori baru yang berisi foler `js`, `template`, dan file `README` dan `LICENSE`. Pada folder `js` berisi folder `config`, `controller`, dan `temp` dan berisi file `fetch.js`. Pada folder `config` berisi file `url.js`, `controller` berisi file `get.js`, dan `temp` berisi file `table.js`.
+
+1. `fetch.js`
+
+```
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { isiTablePresensi } from "./controller/get.js";
+import { urlAPI } from "./config/url.js";
+get(urlAPI, isiTablePresensi);
+```
+
+Dilakukan import seperti diatas.
+
+Jika di jalankan akan terjadi error pada console, karena pada `cors.go` pada boiler plate belun di ganti.
+
+```
+var Cors = cors.Config{
+	AllowOrigins:     strings.Join(origins[:], ","),
+	AllowMethods:     "GET,HEAD,OPTIONS,POST,PUT",
+	AllowHeaders:     "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+	ExposeHeaders:    "Content-Length",
+	AllowCredentials: true,
+}
+```
+
+Dan pada `var origins = []string` di tambahkan github pages kita agar github pages kita biasa diakses untuk frontend.
+
+```
+"https://febriand1.github.io"
+
+```
+
+2. `config/url.js`
+
+```
+export let urlAPI = "https://ws-nilai.herokuapp.com/nilai";
+```
+
+Disini di panggil url heroku yang sudah menampilkan data tadi pada [no 2](#2-url-heroku).
+
+3. `temp/table.js`
+
+```
+export let isiTabel = `
+<tr class="h-18 border-b border-coolGray-100">
+    <th class="whitespace-nowrap px-4 bg-white text-left">
+        <div class="flex items-center -m-2">
+            <div class="w-auto p-2">
+                <input class="w-4 h-4 bg-white rounded" type="checkbox">
+            </div>
+            <div class="w-auto p-2">
+                <p class="text-xs font-semibold text-coolGray-800">#NPM#</p>
+                <p class="text-xs font-medium text-coolGray-500">#NAMA#</p>
+                <p class="text-xs font-medium text-coolGray-500">#NOHP#</p>
+            </div>
+        </div>
+    </th>
+        <th class="whitespace-nowrap px-4 bg-white text-left">
+        <div class="w-auto p-2">
+        <p class="text-xs font-semibold text-coolGray-800">#MATAKULIAH#</p>
+        <p class="text-xs font-medium text-coolGray-500">#DOSEN#</p>
+        <p class="text-xs font-medium text-coolGray-500">#NOHPD#</p>
+        </div>
+    </th>
+        <th class="whitespace-nowrap px-4 bg-white text-left">
+        <div class="w-auto p-2">
+        <p class="text-xs font-semibold text-coolGray-800">#JAMMASUK#</p>
+        <p class="text-xs font-medium text-coolGray-500">#JAMKELUAR#</p>
+        <p class="text-xs font-medium text-coolGray-500">#HARI#</p>
+        </div>
+    </th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#HADIR#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#TUGAS1#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-coolGray-500 text-left">#TUGAS2#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#TUGAS3#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#TUGAS4#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#TUGAS5#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#UTS#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#UAS#</th>
+    <th class="whitespace-nowrap px-4 bg-white text-sm font-medium text-#col#-500 text-left">#GRADE#</th>
+
+    <th class="whitespace-nowrap pr-4 bg-white text-sm font-medium text-coolGray-800">
+        <svg class="ml-auto" width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 6.66669C7.73629 6.66669 7.47851 6.74489 7.25924 6.89139C7.03998 7.0379 6.86908 7.24614 6.76816 7.48978C6.66724 7.73341 6.64084 8.0015 6.69229 8.26014C6.74373 8.51878 6.87072 8.75636 7.05719 8.94283C7.24366 9.1293 7.48124 9.25629 7.73988 9.30773C7.99852 9.35918 8.26661 9.33278 8.51025 9.23186C8.75388 9.13094 8.96212 8.96005 9.10863 8.74078C9.25514 8.52152 9.33333 8.26373 9.33333 8.00002C9.33333 7.6464 9.19286 7.30726 8.94281 7.05721C8.69276 6.80716 8.35362 6.66669 8 6.66669ZM3.33333 6.66669C3.06963 6.66669 2.81184 6.74489 2.59257 6.89139C2.37331 7.0379 2.20241 7.24614 2.10149 7.48978C2.00058 7.73341 1.97417 8.0015 2.02562 8.26014C2.07707 8.51878 2.20405 8.75636 2.39052 8.94283C2.57699 9.1293 2.81457 9.25629 3.07321 9.30773C3.33185 9.35918 3.59994 9.33278 3.84358 9.23186C4.08721 9.13094 4.29545 8.96005 4.44196 8.74078C4.58847 8.52152 4.66667 8.26373 4.66667 8.00002C4.66667 7.6464 4.52619 7.30726 4.27614 7.05721C4.02609 6.80716 3.68696 6.66669 3.33333 6.66669ZM12.6667 6.66669C12.403 6.66669 12.1452 6.74489 11.9259 6.89139C11.7066 7.0379 11.5357 7.24614 11.4348 7.48978C11.3339 7.73341 11.3075 8.0015 11.359 8.26014C11.4104 8.51878 11.5374 8.75636 11.7239 8.94283C11.9103 9.1293 12.1479 9.25629 12.4065 9.30773C12.6652 9.35918 12.9333 9.33278 13.1769 9.23186C13.4205 9.13094 13.6288 8.96005 13.7753 8.74078C13.9218 8.52152 14 8.26373 14 8.00002C14 7.6464 13.8595 7.30726 13.6095 7.05721C13.3594 6.80716 13.0203 6.66669 12.6667 6.66669Z" fill="#WARNA#"></path>
+        </svg>
+    </th>
+</tr>
+`;
+```
+
+Dibuatkan source code untuk tempat dimasukkannya data yang di panggil dari `get.js`
+
+4. `controller/get.js`
+
+```
+import { addInner } from "https://bukulapak.github.io/element/process.js";
+import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
+import { isiTabel } from "../temp/table.js";
+export function isiTablePresensi(results) {
+  results.forEach(isiRow);
+  console.log(results);
+}
+function isiRow(value) {
+  let content = isiTabel
+    .replace("#NPM#", value.absensi.biodata.npm)
+    .replace("#NAMA#", value.absensi.biodata.nama)
+    .replace("#NOHP#", value.absensi.biodata ? value.absensi.biodata.phonenumber : "#NOHP#")
+    .replace("#MATAKULIAH#", value.kategori.nama_mk)
+    .replace("#DOSEN#", value.kategori.pengampu ? value.kategori.pengampu.namadosen : "#DOSEN#")
+    .replace("#NOHPD#", value.kategori.pengampu.phonenumberd)
+    .replace("#JAMMASUK#", value.kategori.jadwal ? value.kategori.jadwal.jammasuk : "#JAMMASUK#")
+    .replace("#JAMKELUAR#", value.kategori.jadwal.jamkeluar)
+    .replace("#HARI#", value.kategori.jadwal.hari)
+    .replace("#HADIR#", value.absensi.jumlahkehadiran)
+    .replace("#TUGAS1#", value.alltugas.tugas1)
+    .replace("#TUGAS2#", value.alltugas.tugas2)
+    .replace("#TUGAS3#", value.alltugas.tugas3)
+    .replace("#TUGAS4#", value.alltugas.tugas4)
+    .replace("#TUGAS5#", value.alltugas.tugas5)
+    .replace("#UTS#", value.uts)
+    .replace("#UAS#", value.uts)
+    .replace("#GRADE#", value.grade.namagrade)
+    .replace("#WARNA#", getRandomColor())
+    .replace(/#WARNALOGO#/g, getRandomColorName());
+  addInner("iniTabel", content);
+}
+```
+
+Dilakukan import dan memanggil data dari mongodb, lalu data tersebut akan ditampilkan pada pages github, dapat dilihat pada [no 3](#3-url-frontend), dan untuk skrinsutnya pada [no 6](#6-skrinsut-frontend)
+
+untuk source code dari templatenya sebagai [berikut](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html)
+
+---
+
+# 2. URL Heroku
+
+https://ws-nilai.herokuapp.com/nilai
+
+---
+
+# 3. URL Frontend
+
+https://febriand1.github.io/frontend_uts/template/
+
+---
+
+# 4. Skrinsut MongoDB
+
+![1](https://user-images.githubusercontent.com/110885840/230623929-dd879ec2-b46b-4950-b42d-56c364d57c68.png)
+
+![2](https://user-images.githubusercontent.com/110885840/230623934-0b5f9efc-6c3f-404c-8690-0093b0cecefd.png)
+
+![3](https://user-images.githubusercontent.com/110885840/230623940-e2aee8c2-6658-467d-a013-28c81ae69701.png)
+
+![4](https://user-images.githubusercontent.com/110885840/230623942-4eb35ca5-3f84-4f5b-9250-f3daabb6c2de.png)
+
+![5](https://user-images.githubusercontent.com/110885840/230624329-3c6cebf7-71d2-493e-9e24-282c252b0d03.png)
+
+![6](https://user-images.githubusercontent.com/110885840/230623944-f7906a74-67fd-4dfc-8421-27cab83945ee.png)
+
+![7](https://user-images.githubusercontent.com/110885840/230623948-81294ca7-b4a1-4258-bb0c-819d8a60846d.png)
+
+![8](https://user-images.githubusercontent.com/110885840/230623953-8556d033-7dec-43f7-b0cf-a19ba1479321.png)
+
+---
+
+# 5. Skrinsut Postman
+
+![pm](https://user-images.githubusercontent.com/110885840/230626115-ec544786-17d0-4f14-b663-edfba55cf738.png)
+
+---
+
+# 6. Skrinsut Frontend
+
+![fe1](https://user-images.githubusercontent.com/110885840/230625020-792b60fd-ca86-4ea3-a7da-879b8f1b8136.png)
+
+![fe2](https://user-images.githubusercontent.com/110885840/230625026-0a87041b-f508-44d0-8c0e-309b1795d1cd.png)
+
+---
