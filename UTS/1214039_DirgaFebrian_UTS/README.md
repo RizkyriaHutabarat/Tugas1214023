@@ -7,20 +7,20 @@ Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebel
 
 Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
 
-```
+```bash
 go get github.com/febriand1/nilai
 ```
 
 Jika sudah berhasil, import pakage pada `controller/coba.go` dengan menginisialisasikan pakage seperti dibawah ini.
 
-```
+```go
 inimodel "github.com/Febriand1/Nilai/Model"
 inimodul "github.com/Febriand1/Nilai/Module"
 ```
 
 Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke pkg.go.dev.
 
-```
+```go
 func GetAllNilai(c *fiber.Ctx) error {
 	ps := inimodul.GetAllNilai(config.Ulbimongoconn, "nilai")
 	return c.JSON(ps)
@@ -29,7 +29,7 @@ func GetAllNilai(c *fiber.Ctx) error {
 
 Lalu rapikan dependensi dengan mengetikkan perintah berikut pada terminal dan jalankan.
 
-```
+```bash
 go mod tidy
 go run main.go
 ```
@@ -37,7 +37,7 @@ go run main.go
 Akan muncul link pada terminal, dan buka link tersebut lalu tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai.
 Jika data sudah tampil, langkah selanjutnya lakukan push ke heroku dengan mengetikkan perintah berikut pada terminal.
 
-```
+```bash
 git status
 git add.
 git status
@@ -50,9 +50,9 @@ Lalu pada terminal akan menampilkan link heroku, klik link tersebut dan tambahka
 
 Setelah itu lanjutkan ke frontend dengan membuatkan repositori baru yang berisi foler `js`, `template`, dan file `README` dan `LICENSE`. Pada folder `js` berisi folder `config`, `controller`, dan `temp` dan berisi file `fetch.js`. Pada folder `config` berisi file `url.js`, `controller` berisi file `get.js`, dan `temp` berisi file `table.js`.
 
-1. `fetch.js`
+1. Pada `fetch.js`
 
-```
+```javascript
 import { get } from "https://bukulapak.github.io/api/process.js";
 import { isiTablePresensi } from "./controller/get.js";
 import { urlAPI } from "./config/url.js";
@@ -63,7 +63,7 @@ Dilakukan import seperti diatas.
 
 Jika di jalankan akan terjadi error pada console, karena pada `cors.go` pada boiler plate belun di ganti.
 
-```
+```go
 var Cors = cors.Config{
 	AllowOrigins:     strings.Join(origins[:], ","),
 	AllowMethods:     "GET,HEAD,OPTIONS,POST,PUT",
@@ -75,22 +75,22 @@ var Cors = cors.Config{
 
 Dan pada `var origins = []string` di tambahkan github pages kita agar github pages kita biasa diakses untuk frontend.
 
-```
+```go
 "https://febriand1.github.io"
 
 ```
 
-2. `config/url.js`
+2. Pada `config/url.js`
 
-```
+```javascript
 export let urlAPI = "https://ws-nilai.herokuapp.com/nilai";
 ```
 
 Disini di panggil url heroku yang sudah menampilkan data tadi pada [no 2](#2-url-heroku).
 
-3. `temp/table.js`
+3. Pada `temp/table.js`
 
-```
+```javascript
 export let isiTabel = `
 <tr class="h-18 border-b border-coolGray-100">
     <th class="whitespace-nowrap px-4 bg-white text-left">
@@ -140,9 +140,9 @@ export let isiTabel = `
 
 Dibuatkan source code untuk tempat dimasukkannya data yang di panggil dari `get.js`
 
-4. `controller/get.js`
+4. Pada `controller/get.js`
 
-```
+```javascript
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "../temp/table.js";
