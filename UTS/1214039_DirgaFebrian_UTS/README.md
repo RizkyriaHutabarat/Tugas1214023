@@ -182,9 +182,9 @@ function isiRow(value) {
 }
 ```
 
-Dilakukan import dan melakukan replace atau mengganti semua yang memiliki "#" salah satu contohnya `#NAMA#` dengan data dari mongodb dengan memanggil data tersebut sesuai dengan dimana letak data tersebut seperti contoh source code diatas yaitu `value.absensi.biodata.nama` akan mengganti `#NAMA#` dengan data yang berada pada "biodata" yang di dalamnya ada "nama".
+Dilakukan import dan melakukan replace atau mengganti semua yang memiliki "#" salah satu contohnya `#NAMA#` dengan data dari mongodb dengan memanggil data tersebut sesuai dengan dimana letak data tersebut seperti contoh source code diatas yaitu `value.absensi.biodata.nama` akan mengganti `#NAMA#` dengan data yang berada pada `biodata` yang di dalamnya ada `nama`.
 
-Lalu untuk `value.kategori.jadwal ? value.kategori.jadwal.jammasuk : "#JAMMASUK#"` ini adalah sebuah kondisi dimana "JAMMASUK" akan di ganti dengan data yang berada pada "kategori" yang di dalamnya ada "jadwal" dan jika di dalamnya lagi ada "jammasuk" maka akan menampilkan data dari "jammasuk", tetapi jika tidak ditemukan "jammasuk" tidak akan menampilkan data dan akan menghasilkan undefined.
+Lalu untuk `value.kategori.jadwal ? value.kategori.jadwal.jammasuk : "#JAMMASUK#"` ini adalah sebuah kondisi dimana `#JAMMASUK#` akan di ganti dengan data yang berada pada `kategori` yang di dalamnya ada `jadwal` dan jika di dalamnya lagi ada `jammasuk` maka akan menampilkan data dari `jammasuk`, tetapi jika tidak ditemukan `jammasuk` tidak akan menampilkan data dan akan menghasilkan **undefined**.
 
 Lalu data tersebut akan ditampilkan pada pages github, dapat dilihat pada [no 3](#3-url-frontend), dan untuk skrinsutnya pada [no 6](#6-skrinsut-frontend).
 
