@@ -212,21 +212,37 @@ https://febriand1.github.io/frontend_uts/template/
 
 # 4. Skrinsut MongoDB
 
-![1](https://user-images.githubusercontent.com/110885840/230623929-dd879ec2-b46b-4950-b42d-56c364d57c68.png)
+- dosen
 
-![2](https://user-images.githubusercontent.com/110885840/230623934-0b5f9efc-6c3f-404c-8690-0093b0cecefd.png)
+  ![1](https://user-images.githubusercontent.com/110885840/230623929-dd879ec2-b46b-4950-b42d-56c364d57c68.png)
 
-![3](https://user-images.githubusercontent.com/110885840/230623940-e2aee8c2-6658-467d-a013-28c81ae69701.png)
+- grade
 
-![4](https://user-images.githubusercontent.com/110885840/230623942-4eb35ca5-3f84-4f5b-9250-f3daabb6c2de.png)
+  ![2](https://user-images.githubusercontent.com/110885840/230623934-0b5f9efc-6c3f-404c-8690-0093b0cecefd.png)
 
-![5](https://user-images.githubusercontent.com/110885840/230624329-3c6cebf7-71d2-493e-9e24-282c252b0d03.png)
+- mahasiswa
 
-![6](https://user-images.githubusercontent.com/110885840/230623944-f7906a74-67fd-4dfc-8421-27cab83945ee.png)
+  ![3](https://user-images.githubusercontent.com/110885840/230623940-e2aee8c2-6658-467d-a013-28c81ae69701.png)
 
-![7](https://user-images.githubusercontent.com/110885840/230623948-81294ca7-b4a1-4258-bb0c-819d8a60846d.png)
+- matakuliah
 
-![8](https://user-images.githubusercontent.com/110885840/230623953-8556d033-7dec-43f7-b0cf-a19ba1479321.png)
+  ![4](https://user-images.githubusercontent.com/110885840/230623942-4eb35ca5-3f84-4f5b-9250-f3daabb6c2de.png)
+
+- nilai
+
+  ![5](https://user-images.githubusercontent.com/110885840/230624329-3c6cebf7-71d2-493e-9e24-282c252b0d03.png)
+
+- presensi
+
+  ![6](https://user-images.githubusercontent.com/110885840/230623944-f7906a74-67fd-4dfc-8421-27cab83945ee.png)
+
+- tugas
+
+  ![7](https://user-images.githubusercontent.com/110885840/230623948-81294ca7-b4a1-4258-bb0c-819d8a60846d.png)
+
+- waktu
+
+  ![8](https://user-images.githubusercontent.com/110885840/230623953-8556d033-7dec-43f7-b0cf-a19ba1479321.png)
 
 ---
 
