@@ -57,6 +57,10 @@ git push heroku main
 
 Lalu pada terminal akan menampilkan link heroku, klik link tersebut dan tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai seperti pada bagian [no 2](#2-url-heroku).
 
+![link3](https://user-images.githubusercontent.com/110885840/230784743-be4a28ff-df7f-4a5e-82bb-1484195c28cf.png)
+
+![link4](https://user-images.githubusercontent.com/110885840/230784745-6c26bf11-c8fe-4b43-b054-fb0579165f7a.png)
+
 Setelah itu lanjutkan ke frontend dengan membuatkan repositori baru yang berisi foler `js`, `template`, dan file `README` dan `LICENSE`. Pada folder `js` berisi folder `config`, `controller`, dan `temp` dan berisi file `fetch.js`. Pada folder `config` berisi file `url.js`, `controller` berisi file `get.js`, dan `temp` berisi file `table.js`. Lalu pada folder `template` berisi folder `css` dari tailwind dan file `index.html`. File `index.html` berisi template untuk membuat interface dan menampilkannya. Untuk source code dari templatenya ada [disini](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html).
 
 Berikut isi dari folder `js`.
