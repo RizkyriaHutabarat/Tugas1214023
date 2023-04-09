@@ -1,31 +1,28 @@
 # 1. Source Code dan Penjelasan
 
-Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20.
-Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser.
-Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4.
-Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+    Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20. Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser. Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4. Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
 
-Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
+    Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
 
-```bash
-go get github.com/febriand1/nilai
-```
+    ```bash
+    go get github.com/febriand1/nilai
+    ```
 
-Jika sudah berhasil, import pakage pada `controller/coba.go` dengan menginisialisasikan pakage seperti dibawah ini.
+    Jika sudah berhasil, import pakage pada `controller/coba.go` dengan menginisialisasikan pakage seperti dibawah ini.
 
-```go
-inimodel "github.com/Febriand1/Nilai/Model"
-inimodul "github.com/Febriand1/Nilai/Module"
-```
+    ```go
+    inimodel "github.com/Febriand1/Nilai/Model"
+    inimodul "github.com/Febriand1/Nilai/Module"
+    ```
 
-Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke pkg.go.dev.
+    Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke pkg.go.dev.
 
-```go
-func GetAllNilai(c *fiber.Ctx) error {
-	ps := inimodul.GetAllNilai(config.Ulbimongoconn, "nilai")
-	return c.JSON(ps)
-}
-```
+    ```go
+    func GetAllNilai(c *fiber.Ctx) error {
+        ps := inimodul.GetAllNilai(config.Ulbimongoconn, "nilai")
+        return c.JSON(ps)
+    }
+    ```
 
 Lalu rapikan dependensi dengan mengetikkan perintah berikut pada terminal dan jalankan.
 
