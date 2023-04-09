@@ -4,9 +4,11 @@ Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai yang memilik
 
 Lalu pada week 5 juga sudah dibuat sebuah boilerplate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser.
 
-Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend dari week 4.
+Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4.
 
-Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya.
+
+Berikut adalah alur proses menampilkan data dari backend pada mongodb ke frontend.
 
 Pada boilerplate dilakukan get pada terminal untuk memanggil pakage yang sudah masuk ke [pkg.go.dev](https://pkg.go.dev/github.com/Febriand1/Nilai) sebelumnya.
 
@@ -38,6 +40,10 @@ go run main.go
 ```
 
 Akan muncul link pada terminal, dan buka link tersebut lalu tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai.
+![link](https://user-images.githubusercontent.com/110885840/230781058-548e1713-65c0-4c79-b12c-fba75614e283.png)
+
+![link2](https://user-images.githubusercontent.com/110885840/230781061-4428aec6-4a1d-418d-8f82-b37a9b3fd52b.png)
+
 Jika data sudah tampil, langkah selanjutnya lakukan push ke heroku dengan mengetikkan perintah berikut pada terminal.
 
 ```bash
@@ -51,7 +57,9 @@ git push heroku main
 
 Lalu pada terminal akan menampilkan link heroku, klik link tersebut dan tambahkan `/nilai` pada belakang link untuk menampilkan data dari nilai seperti pada bagian [no 2](#2-url-heroku).
 
-Setelah itu lanjutkan ke frontend dengan membuatkan repositori baru yang berisi foler `js`, `template`, dan file `README` dan `LICENSE`. Pada folder `js` berisi folder `config`, `controller`, dan `temp` dan berisi file `fetch.js`. Pada folder `config` berisi file `url.js`, `controller` berisi file `get.js`, dan `temp` berisi file `table.js`.
+Setelah itu lanjutkan ke frontend dengan membuatkan repositori baru yang berisi foler `js`, `template`, dan file `README` dan `LICENSE`. Pada folder `js` berisi folder `config`, `controller`, dan `temp` dan berisi file `fetch.js`. Pada folder `config` berisi file `url.js`, `controller` berisi file `get.js`, dan `temp` berisi file `table.js`. Lalu pada folder `template` berisi folder `css` dari tailwind dan file `index.html`. File `index.html` berisi template untuk membuat interface dan menampilkannya. Untuk source code dari templatenya ada [disini](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html).
+
+Berikut isi dari folder `js`.
 
 1. Pada `fetch.js`
 
@@ -62,7 +70,7 @@ import { urlAPI } from "./config/url.js";
 get(urlAPI, isiTablePresensi);
 ```
 
-Dilakukan import seperti diatas.
+Dilakukan import dan menyatakan lokasi dari yang akan diimport tersebut seperti diatas.
 
 Jika di jalankan akan terjadi error pada console, karena `var Cors = cors.Config` pada `cors.go` pada boilerplate belun di ganti.
 
@@ -187,8 +195,6 @@ Dilakukan import dan melakukan replace atau mengganti semua yang memiliki "#" sa
 Lalu untuk `value.kategori.jadwal ? value.kategori.jadwal.jammasuk : "#JAMMASUK#"` ini adalah sebuah kondisi dimana `#JAMMASUK#` akan di ganti dengan data yang berada pada `kategori` yang di dalamnya ada `jadwal` dan jika di dalamnya lagi ada `jammasuk` maka akan menampilkan data dari `jammasuk`, tetapi jika tidak ditemukan `jammasuk` tidak akan menampilkan data dan akan menghasilkan **undefined**.
 
 Lalu data tersebut akan ditampilkan pada pages github, dapat dilihat pada [no 3](#3-url-frontend), dan untuk skrinsutnya pada [no 6](#6-skrinsut-frontend).
-
-Untuk source code dari templatenya ada [disini](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html)
 
 ---
 
