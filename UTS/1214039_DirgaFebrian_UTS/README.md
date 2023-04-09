@@ -1,8 +1,14 @@
 # 1. Source Code dan Penjelasan
 
-Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai. yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20. Lalu pada week 5 juga sudah dibuat sebuah boiler plate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser. Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend pada week 4. Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+Sebelumnya telah dibuat untuk backend pada week 4 dengan tema Nilai yang memiliki 8 collection seperti yang terlihat pada bagian [no 4](#4-skrinsut-mongodb) dengan jumlah data sebanyak 20.
 
-Pada boilerplate dilakukan get untuk memanggil pakage yang sudah masuk ke pkg.go.dev sebelumnya.
+Lalu pada week 5 juga sudah dibuat sebuah boilerplate yang sudah menyambung dengan heroku dan bisa menampilkan data json dari backend pada browser.
+
+Setelah itu pada week 6 dibuat frontend dan sudah menampilkan data dari backend dari week 4.
+
+Selanjutnya untuk UTS dibuatkan frontend dengan template yang berbeda dari sebelumnya. Berikut alur prosesnya.
+
+Pada boilerplate dilakukan get pada terminal untuk memanggil pakage yang sudah masuk ke [pkg.go.dev](https://pkg.go.dev/github.com/Febriand1/Nilai) sebelumnya.
 
 ```bash
 go get github.com/febriand1/nilai
@@ -15,7 +21,7 @@ inimodel "github.com/Febriand1/Nilai/Model"
 inimodul "github.com/Febriand1/Nilai/Module"
 ```
 
-Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke pkg.go.dev.
+Setelah dilakukan import, tambahkan fungsi berikut untuk memanggil fungsi dari repositori backend yang sudah masuk ke [pkg.go.dev](https://pkg.go.dev/github.com/Febriand1/Nilai).
 
 ```go
 func GetAllNilai(c *fiber.Ctx) error {
@@ -58,7 +64,7 @@ get(urlAPI, isiTablePresensi);
 
 Dilakukan import seperti diatas.
 
-Jika di jalankan akan terjadi error pada console, karena pada `cors.go` pada boiler plate belun di ganti.
+Jika di jalankan akan terjadi error pada console, karena `var Cors = cors.Config` pada `cors.go` pada boilerplate belun di ganti.
 
 ```go
 var Cors = cors.Config{
@@ -83,7 +89,7 @@ Dan pada `var origins = []string` di tambahkan github pages kita agar github pag
 export let urlAPI = "https://ws-nilai.herokuapp.com/nilai";
 ```
 
-Disini di panggil url heroku yang sudah menampilkan data tadi pada [no 2](#2-url-heroku).
+Disini di panggil url heroku yang sudah menampilkan data tadi seperti pada [no 2](#2-url-heroku).
 
 3. Pada `temp/table.js`
 
@@ -94,6 +100,9 @@ export let isiTabel = `
         <div class="flex items-center -m-2">
             <div class="w-auto p-2">
                 <input class="w-4 h-4 bg-white rounded" type="checkbox">
+            </div>
+            <div class="w-auto p-2">
+                <div class="flex items-center justify-center w-10 h-10 text-base font-medium text-#WARNALOGO#-600 bg-#WARNALOGO#-200 rounded-md">ULBI</div>
             </div>
             <div class="w-auto p-2">
                 <p class="text-xs font-semibold text-coolGray-800">#NPM#</p>
@@ -135,7 +144,7 @@ export let isiTabel = `
 `;
 ```
 
-Dibuatkan source code untuk tempat dimasukkannya data yang di panggil dari `get.js`
+Dibuatkan source code untuk tempat menampung data yang di panggil dari `get.js`, atau juga bisa di katakan semua yang memiliki tanda "#" salah satu contohnya `#NAMA#` akan di ganti dengan data yang ada pada mongodb. Dan data tersebut akan tampil didalam table yang di buat pada `index.html`.
 
 4. Pada `controller/get.js`
 
@@ -173,9 +182,13 @@ function isiRow(value) {
 }
 ```
 
-Dilakukan import dan memanggil data dari mongodb, lalu data tersebut akan ditampilkan pada pages github, dapat dilihat pada [no 3](#3-url-frontend), dan untuk skrinsutnya pada [no 6](#6-skrinsut-frontend)
+Dilakukan import dan melakukan replace atau mengganti semua yang memiliki "#" salah satu contohnya `#NAMA#` dengan data dari mongodb dengan memanggil data tersebut sesuai dengan dimana letak data tersebut seperti contoh source code diatas yaitu `value.absensi.biodata.nama` akan mengganti `#NAMA#` dengan data yang berada pada "biodata" yang di dalamnya ada "nama".
 
-untuk source code dari templatenya sebagai [berikut](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html)
+Lalu untuk `value.kategori.jadwal ? value.kategori.jadwal.jammasuk : "#JAMMASUK#"` ini adalah sebuah kondisi dimana "JAMMASUK" akan di ganti dengan data yang berada pada "kategori" yang di dalamnya ada "jadwal" dan jika di dalamnya lagi ada "jammasuk" maka akan menampilkan data dari "jammasuk", tetapi jika tidak ditemukan "jammasuk" tidak akan menampilkan data dan akan menghasilkan undefined.
+
+Lalu data tersebut akan ditampilkan pada pages github, dapat dilihat pada [no 3](#3-url-frontend), dan untuk skrinsutnya pada [no 6](#6-skrinsut-frontend).
+
+Untuk source code dari templatenya ada [disini](https://github.com/Febriand1/frontend_uts/blob/main/template/index.html)
 
 ---
 
