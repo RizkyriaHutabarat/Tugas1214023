@@ -6,13 +6,17 @@
 - UTS membuat fronend atau menampilkan taampilan yang berbeda (tidak boleh sama dengaan template tugas kemarin)
 - Link sumber template frontend (https://tailwindcomponents.com/components/dashboard)
 
-ss template polos
+//Template awal
+![Screenshot (365)](https://user-images.githubusercontent.com/97519820/230965052-c227b3f8-81a7-4fb8-abca-18aa085f3683.png)
+
 
 Pada project Boilerplate yang terdapat pada VScode pada terminal-nya ketikkan perintah:
 
 go get github.com/ArykaAnisaP/arykaanisap //fungsinya adalah memangggil package yang sudah masuk ke package.go.dev
 
-(ss  module)
+import package pada controller/coba.go untuk alias boleh bebas, contoh di bawah ini
+![Screenshot 2023-04-11 000208](https://user-images.githubusercontent.com/97519820/230965291-998fa829-2140-426a-b333-d6b6bb970cc4.png)
+
 
 Tambahkan Fungsi get all pada controller/coba.go 
 func GetAllUang(c *fiber.Ctx) error {
@@ -24,11 +28,13 @@ selanjutnya pada folder url tepatnya file url.go tambahkan path baru
 page.Get("/uang", controller.GetAllUang)
 
 Selanjutnya adalah:
+
 go mod tidy //Untuk merapikan depedensi
 go run main.go //untuk mencoba run pada local
 
-
-(ss link vscode dan uang )
+Output ketika di run
+![Screenshot (363)](https://user-images.githubusercontent.com/97519820/230965994-f572bc54-9767-48e3-b257-d98ae4bdbd16.png)
+![Screenshot (364)](https://user-images.githubusercontent.com/97519820/230966037-12730447-1b68-482c-b153-924b9e93d9be.png)
 
 Lakukan pengecekan apakah file yang akan kita push benar dan sesuai dengan menggunakan perintah: 
 
@@ -49,7 +55,7 @@ langkah selanjutnya adalah Membuat boilerplate framework frontend
 
 Buat folder baru dengan nama (fe_uts)
 di dalamnya buat agi beberapa folder, agar tidak bingung ikutilah seperti gambar dibawah ini
-(ss folder vsc)
+![Screenshot 2023-04-11 005352](https://user-images.githubusercontent.com/97519820/230966193-16a519d6-4f11-4ec2-8be2-db66dcf7db7a.png)
 
 Kita akan mulai mengisi file di dalam folder yang telah kita buat.
 a. file fetch.js
@@ -121,5 +127,23 @@ export let isiTabel =
 </tr>`
 
 2. URL Heroku
+   https://aryka.herokuapp.com/uang
+   
 3. URL Frontend
+   https://arykaanisap.github.io/fe_uts/template/
+   
 4. SCREENSHOT pada MongoDB
+  ![Screenshot (366)](https://user-images.githubusercontent.com/97519820/230967216-40af6f3d-5067-4cd0-baa2-57df82321c5c.png)
+  ![Screenshot (373)](https://user-images.githubusercontent.com/97519820/230967189-0b5266bc-0357-4534-8af0-927abe9f2a47.png)
+  ![Screenshot (368)](https://user-images.githubusercontent.com/97519820/230967213-47d2442e-6360-44f0-8107-f589318458c0.png)
+  ![Screenshot (369)](https://user-images.githubusercontent.com/97519820/230967211-13e0fdea-ea12-4250-bded-73b89ad7c37d.png)
+  ![Screenshot (370)](https://user-images.githubusercontent.com/97519820/230967205-1eb86d8d-41cd-4dba-af1a-cf6494e12a79.png)
+  ![Screenshot (371)](https://user-images.githubusercontent.com/97519820/230967199-1d4610ac-d43e-48e1-8cf4-34f70042e275.png)
+  ![Screenshot (372)](https://user-images.githubusercontent.com/97519820/230967196-4b9f5fc9-1cd7-4b68-acaa-b1115312d2a3.png)
+
+
+
+
+
+
+   
