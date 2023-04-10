@@ -6,7 +6,7 @@
 - UTS membuat fronend atau menampilkan taampilan yang berbeda (tidak boleh sama dengaan template tugas kemarin)
 - Link sumber template frontend (https://tailwindcomponents.com/components/dashboard)
 
-(ss template polos)
+ss template polos
 
 Pada project Boilerplate yang terdapat pada VScode pada terminal-nya ketikkan perintah:
 
