@@ -1,4 +1,6 @@
+```
 1. PROSES
+```
 
 - Week 4 (Pembuatan serta pemilihan studi kasus, disini saya menggunakan tema penggajian dimana di dalam mogo.db terdapat databases yang berjudul  Penggejian_db, dimana  di dalamnya terdapat 7 collection, dan salah satu collection yang berjudul uang didalamnya terdapat 17 jumlah data.)
 - Week5 (Membuat boilerplate yang sudah berhasil tersabnung ke heroku dan menampikan json pada browser)
@@ -12,26 +14,33 @@ Template Awal
 
 Pada project Boilerplate yang terdapat pada VScode pada terminal-nya ketikkan perintah:
 
-
-```go get github.com/ArykaAnisaP/arykaanisap```
+```
+go get github.com/ArykaAnisaP/arykaanisap
+```
 
 import package pada controller/coba.go untuk alias boleh bebas, contoh di bawah ini
 ![Screenshot 2023-04-11 000208](https://user-images.githubusercontent.com/97519820/230965291-998fa829-2140-426a-b333-d6b6bb970cc4.png)
 
 
 Tambahkan Fungsi get all pada controller/coba.go 
+```
 func GetAllUang(c *fiber.Ctx) error {
 	ps := inimodule.GetAllUang(config.Ulbimongoconn, "uang")
 	return c.JSON(ps)
 }
+```
 
 selanjutnya pada folder url tepatnya file url.go tambahkan path baru 
+```
 page.Get("/uang", controller.GetAllUang)
+```
 
 Selanjutnya adalah:
 
+```
 go mod tidy //Untuk merapikan depedensi
 go run main.go //untuk mencoba run pada local
+```
 
 Output ketika di run
 ![Screenshot (363)](https://user-images.githubusercontent.com/97519820/230965994-f572bc54-9767-48e3-b257-d98ae4bdbd16.png)
@@ -43,12 +52,16 @@ git status
 
 jika terdapat banyak tulisan error tidak usah panik lanjutkan langkah selanjutnya yaitu:
 
+```
 git add .
 git status
+```
 
 maka nanti tulisan yang tadinya merah akan berubah jadi hijau semua. Setelah itu lakukan commit dan push
 
+```
 git commit -m "Boleh Diisi Apapun Alias Bebas"
+```
 
 Jika berhasil nanti akan keluar link, nah yang kita lakukan adalah Buka link tautan nomor 2 dari bawah ke browser apapun yang ingin anda pakai. Jika sudah muncul berarti proses berhasil
 
@@ -61,17 +74,22 @@ di dalamnya buat agi beberapa folder, agar tidak bingung ikutilah seperti gambar
 Kita akan mulai mengisi file di dalam folder yang telah kita buat.
 a. file fetch.js
 
+```
 import { get } from "https://bukulapak.github.io/api/process.js";
 import { isiTablePresensi } from "./controller/get.js";
 import { urlAPI } from "./config/url.js";
 get(urlAPI, isiTablePresensi);
+```
 
 b. file config/url.js
 
+```
 export let urlAPI = "https://aryka.herokuapp.com/uang"; //Link disesuaikan dengan heroku kalian
+```
 
 c. file controller/get.js
 
+```
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "../temp/table.js";
@@ -92,11 +110,13 @@ function isiRow(value) {
       .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
   }
+  ```
 //yang di dalam kurung di sesuaikan dengan data kalian masing-masing.
 
 
 d. file template/table.js
 
+```
 export let isiTabel = 
 `
 <tr class="h-18 border-b border-coolGray-100">
@@ -130,6 +150,7 @@ export let isiTabel =
         </svg>
     </th>
 </tr>`
+```
 
 2. URL Heroku
    https://aryka.herokuapp.com/uang
