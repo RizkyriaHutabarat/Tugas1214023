@@ -59,15 +59,18 @@ di dalamnya buat agi beberapa folder, agar tidak bingung ikutilah seperti gambar
 
 Kita akan mulai mengisi file di dalam folder yang telah kita buat.
 a. file fetch.js
+
 import { get } from "https://bukulapak.github.io/api/process.js";
 import { isiTablePresensi } from "./controller/get.js";
 import { urlAPI } from "./config/url.js";
 get(urlAPI, isiTablePresensi);
 
 b. file config/url.js
+
 export let urlAPI = "https://aryka.herokuapp.com/uang"; //Link disesuaikan dengan heroku kalian
 
 c. file controller/get.js
+
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "../temp/table.js";
@@ -92,6 +95,7 @@ function isiRow(value) {
 
 
 d. file template/table.js
+
 export let isiTabel = 
 `
 <tr class="h-18 border-b border-coolGray-100">
