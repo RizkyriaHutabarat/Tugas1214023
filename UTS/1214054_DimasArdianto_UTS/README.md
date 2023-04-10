@@ -8,17 +8,15 @@ Pertama tama yaitu kita cek terlebih dahulu data yang ingin diambil menggunakan 
 
 Data sudah bisa tampil dan nantinya bisa diambil dan ditampilkan pada frontend yang akan dibuat
 
-Selanjutnya yaitu membuat Frontend
-Sebelumnya sudah dibuat Frontend pada Week 6 dengan Template yang sudah ditentukan
-
 Sekarang kita akan membuat Frontend dengan template yang berbeda, dan akan menampilkan data yang sudah dibuat
 
 Pertama tama buat repositori yang isinya yaitu folder `js` , `kemahasiswaan`, dan file `README` , `LICENSE`.
 Lalu buat Folder `config` , `controller` , `temp` , dan file `fetch.js` pada Folder `js`
 Gambar struktur folder nya seperti ini :
+
 ![Struktur Folder](https://user-images.githubusercontent.com/94734096/230948620-27abb145-fb50-4340-ad7d-a767efcd0ef1.png)
 
-Jika sudah, jangan lupa untuk setting cors terlebih dahulu pada boilerplate sebelumnya
+Jika sudah, jangan lupa untuk setting cors pada file `config/cors.go` terlebih dahulu pada boilerplate sebelumnya
 
 ```go
 var Cors = cors.Config{
@@ -46,7 +44,7 @@ Lalu buatlah file `index.html` untuk untuk menampung halaman tabel tabel diatas.
 <script type="module" src="../../../js/fetch.js"></script>
 ```
 
-Edit pada bagian table pada setiap halaman tabel yang sudah dibuat,tambahkan id `<table class="items-center w-full mb-0 align-top border-gray-200 text-slate-500" id="iniTabel2">` agar terisi dengan template html dari `table.js` yang isinya seperti #NAMA# yang akan mereplace dengan data dari API.
+Edit bagian table pada setiap halaman tabel yang sudah dibuat,tambahkan id `<table class="items-center w-full mb-0 align-top border-gray-200 text-slate-500" id="iniTabel2">` agar terisi dengan template html dari `table.js` yang isinya seperti #NAMA# yang akan mereplace dengan data dari API.
 
 ![index](https://user-images.githubusercontent.com/94734096/230958431-d70dec2d-4965-493a-b376-d51116aab34f.png)
 
@@ -76,10 +74,10 @@ get(urlAPIMahasiswa, isiTableMahasiswa);
 get(urlAPINilai, isiTableNilai);
 ```
 
-Code diatas digunakan untuk mengambil data dari beberapa API. Data yang diambil dari API tersebut kemudian diproses menggunakan beberapa fungsi yang disediakan di dalam file `./controller/get.js`, yaitu `isiTable`, `isiTableKemahasiswaan`, `isiTableKeuangan`, `isiTableMahasiswa`, dan `isiTableNilai`.
+Code diatas digunakan untuk mengambil data dari beberapa API. Data yang diambil dari API tersebut kemudian diproses menggunakan beberapa fungsi yang disediakan di dalam file `controller/get.js`, yaitu `isiTable`, `isiTableKemahasiswaan`, `isiTableKeuangan`, `isiTableMahasiswa`, dan `isiTableNilai`.
 
 Setiap pemanggilan fungsi get akan mengambil data dari API yang berbeda dengan URL yang diambil dari file
-`./config/url.js`, yaitu `urlAPI`, `urlAPIKemahasiswaan`, `urlAPIKeuangan`, `urlAPIMahasiswa`, dan `urlAPINilai`
+`config/url.js`, yaitu `urlAPI`, `urlAPIKemahasiswaan`, `urlAPIKeuangan`, `urlAPIMahasiswa`, dan `urlAPINilai`
 
 Selanjutnya pada folder `config` buatlah file `url.js` yang berisi code :
 
@@ -238,18 +236,18 @@ https://dimasardnt6.github.io/fe_kemahasiswaan/kemahasiswaan/build/
 
 - Tabel Kemahasiswaan
 
-![tabel-kemahasiswaan](https://user-images.githubusercontent.com/94734096/230963257-9a8c02e6-b64b-4acd-ba8e-73aa42a369d5.png)
+![tabel-kemahasiswaan](https://user-images.githubusercontent.com/94734096/230965808-9fc71f54-26c3-4073-9164-15ee8be74e0f.png)
 
 - Tabel Mahasiswa
 
-![tabel-mahasiswa](https://user-images.githubusercontent.com/94734096/230963281-ac72ea57-aea3-40e4-9381-39eead0c3c3f.png)
+![tabel-mahasiswa](https://user-images.githubusercontent.com/94734096/230965819-8c7e9764-094e-4ba9-b8c0-14420a7d2e94.png)
 
 - Tabel Keuangan
 
-![tabel-keuangan](https://user-images.githubusercontent.com/94734096/230963304-28d40681-9f9b-46fa-9ebc-997f28a054ef.png)
+![tabel-keuangan](https://user-images.githubusercontent.com/94734096/230965813-b8d31300-14de-4beb-b492-b6e2e9368d96.png)
 
 - Tabel Nilai
 
-![tabel-nilai](https://user-images.githubusercontent.com/94734096/230963321-e481e90e-e775-4469-ad19-ac3eb7f8b8b9.png)
+![tabel-nilai](https://user-images.githubusercontent.com/94734096/230965823-8925248f-d828-4905-aed2-fde51c1a578a.png)
 
 ---
