@@ -13,7 +13,7 @@ Template Awal
 Pada project Boilerplate yang terdapat pada VScode pada terminal-nya ketikkan perintah:
 
 
-```go get github.com/ArykaAnisaP/arykaanisap //fungsinya adalah memangggil package yang sudah masuk ke package.go.dev```
+```go get github.com/ArykaAnisaP/arykaanisap``` //fungsinya adalah memangggil package yang sudah masuk ke package.go.dev
 
 import package pada controller/coba.go untuk alias boleh bebas, contoh di bawah ini
 ![Screenshot 2023-04-11 000208](https://user-images.githubusercontent.com/97519820/230965291-998fa829-2140-426a-b333-d6b6bb970cc4.png)
