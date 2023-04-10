@@ -15,33 +15,45 @@ go get github.com/ArykaAnisaP/arykaanisap //fungsinya adalah memangggil package 
 (ss  module)
 
 Tambahkan Fungsi get all pada controller/coba.go 
+```
 func GetAllUang(c *fiber.Ctx) error {
 	ps := inimodule.GetAllUang(config.Ulbimongoconn, "uang")
 	return c.JSON(ps)
 }
+```
 
 selanjutnya pada folder url tepatnya file url.go tambahkan path baru 
+```
 page.Get("/uang", controller.GetAllUang)
+```
 
 Selanjutnya adalah:
+
+```
 go mod tidy //Untuk merapikan depedensi
 go run main.go //untuk mencoba run pada local
-
+```
 
 (ss link vscode dan uang )
 
 Lakukan pengecekan apakah file yang akan kita push benar dan sesuai dengan menggunakan perintah: 
 
+```
 git status
+```
 
 jika terdapat banyak tulisan error tidak usah panik lanjutkan langkah selanjutnya yaitu:
 
+```
 git add .
 git status
+```
 
 maka nanti tulisan yang tadinya merah akan berubah jadi hijau semua. Setelah itu lakukan commit dan push
 
+```
 git commit -m "Boleh Diisi Apapun Alias Bebas"
+```
 
 Jika berhasil nanti akan keluar link, nah yang kita lakukan adalah Buka link tautan nomor 2 dari bawah ke browser apapun yang ingin anda pakai. Jika sudah muncul berarti proses berhasil
 
@@ -53,15 +65,21 @@ di dalamnya buat agi beberapa folder, agar tidak bingung ikutilah seperti gambar
 
 Kita akan mulai mengisi file di dalam folder yang telah kita buat.
 a. file fetch.js
+```
 import { get } from "https://bukulapak.github.io/api/process.js";
 import { isiTablePresensi } from "./controller/get.js";
 import { urlAPI } from "./config/url.js";
 get(urlAPI, isiTablePresensi);
+```
 
 b. file config/url.js
+```
 export let urlAPI = "https://aryka.herokuapp.com/uang"; //Link disesuaikan dengan heroku kalian
+```
 
 c. file controller/get.js
+
+```
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "../temp/table.js";
@@ -83,9 +101,11 @@ function isiRow(value) {
     addInner("iniTabel", content);
   }
 //yang di dalam kurung di sesuaikan dengan data kalian masing-masing.
-
+```
 
 d. file template/table.js
+
+```
 export let isiTabel = 
 `
 <tr class="h-18 border-b border-coolGray-100">
@@ -119,6 +139,7 @@ export let isiTabel =
         </svg>
     </th>
 </tr>`
+```
 
 2. URL Heroku
 3. URL Frontend
