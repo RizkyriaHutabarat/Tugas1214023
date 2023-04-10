@@ -6,13 +6,13 @@
 - UTS membuat fronend atau menampilkan taampilan yang berbeda (tidak boleh sama dengaan template tugas kemarin)
 - Link sumber template frontend (https://tailwindcomponents.com/components/dashboard)
 
-//Template awal
+Template Awal
 ![Screenshot (365)](https://user-images.githubusercontent.com/97519820/230965052-c227b3f8-81a7-4fb8-abca-18aa085f3683.png)
 
 
 Pada project Boilerplate yang terdapat pada VScode pada terminal-nya ketikkan perintah:
 
-go get github.com/ArykaAnisaP/arykaanisap //fungsinya adalah memangggil package yang sudah masuk ke package.go.dev
+"go get github.com/ArykaAnisaP/arykaanisap //fungsinya adalah memangggil package yang sudah masuk ke package.go.dev"
 
 import package pada controller/coba.go untuk alias boleh bebas, contoh di bawah ini
 ![Screenshot 2023-04-11 000208](https://user-images.githubusercontent.com/97519820/230965291-998fa829-2140-426a-b333-d6b6bb970cc4.png)
