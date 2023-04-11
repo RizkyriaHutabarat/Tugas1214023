@@ -93,7 +93,7 @@
   }
   ```
   
-  Jika sudah berjalan lancar semua setiap link, selanjutnya lakukan commit & push pada repo github dan juga heroku.
+  Jika sudah berjalan lancar semua setiap link, selanjutnya lakukan commit & push pada repo github dan juga heroku. Dan API pun jadi dapat dilihat di [URL HEROKU](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#b--url-heroku)
   
 * Menyiapkan Template
   
