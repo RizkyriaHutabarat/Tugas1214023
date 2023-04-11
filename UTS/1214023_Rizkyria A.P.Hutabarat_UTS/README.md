@@ -149,7 +149,7 @@ import { urlAPI } from "./config/url.js";
 get(urlAPI, isiTablePresensi);
 ```
 
-setelah tahap ini selesai makan hasil browser seperti ini
+setelah tahap ini selesai makan hasil browser seperti ini :
 ![Screenshot (3564)](https://user-images.githubusercontent.com/98501177/231102144-23e95d8f-5756-4ef4-9104-64a39e50f1eb.png)
 
 # 2. Link URL Heroku
