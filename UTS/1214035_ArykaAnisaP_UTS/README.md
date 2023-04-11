@@ -161,5 +161,10 @@ export let isiTabel =
   ![Screenshot (371)](https://user-images.githubusercontent.com/97519820/230967199-1d4610ac-d43e-48e1-8cf4-34f70042e275.png)
   ![Screenshot (372)](https://user-images.githubusercontent.com/97519820/230967196-4b9f5fc9-1cd7-4b68-acaa-b1115312d2a3.png)
 
+5. SCREENSHOT POSTMAN
+![Screenshot (374)](https://user-images.githubusercontent.com/97519820/231215671-27343568-1f17-407f-8bba-8a921167a31f.png)
+
+6. SCREENSHOT FRONTEND
+![Screenshot (361)](https://user-images.githubusercontent.com/97519820/231215794-f4785089-afe1-4741-8882-040395e88482.png)
 
    
