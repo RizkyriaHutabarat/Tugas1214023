@@ -162,7 +162,7 @@ https://rizkyriahutabarat.github.io/fe_profile/template/
 
 # 4. SS MongoDB
 
-1. user
+1. User
    ![Screenshot (3556)](https://user-images.githubusercontent.com/98501177/231102664-21756abf-93ce-4214-8675-21e4ba95abed.png)
    ![Screenshot (3557)](https://user-images.githubusercontent.com/98501177/231102679-4c02e010-0074-45cd-8112-4440391c68e3.png)
    ![Screenshot (3558)](https://user-images.githubusercontent.com/98501177/231102693-0b472b9e-97e4-41ef-a66a-1128c8f4a21b.png)
