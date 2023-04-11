@@ -1,5 +1,4 @@
 1. PROSES
-
 - Week 4 (Pembuatan serta pemilihan studi kasus, disini saya menggunakan tema penggajian dimana di dalam mogo.db terdapat databases yang berjudul  Penggejian_db, dimana  di dalamnya terdapat 7 collection, dan salah satu collection yang berjudul uang didalamnya terdapat 17 jumlah data.)
 - Week5 (Membuat boilerplate yang sudah berhasil tersabnung ke heroku dan menampikan json pada browser)
 - Week6 (Membuat sebuah frontend dimana data yang ditampilkan adalah data yang terdapat pada week4)
