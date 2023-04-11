@@ -291,6 +291,9 @@ get(urlAPIruangan, isiTabel_Ruangan);
 Setelah itu dilakukan git push dan mencoba membuka link pada github pages
 ![c](https://user-images.githubusercontent.com/125644091/231033324-4494d952-9c05-4adc-90cc-9aac4007bacd.png)
 
+Maka akan muncul Tabel - Tabel yang sudah dibuat
+![Frontend1](https://user-images.githubusercontent.com/125644091/230999457-b75431c3-f9b6-4cb0-a7d7-9ae419272a0e.png)
+
 # URL HEROKU
 
 - https://alnovianti.herokuapp.com/perwalian
