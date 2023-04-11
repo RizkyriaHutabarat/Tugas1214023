@@ -57,928 +57,80 @@ pada folder template isikan template html untuk file `index.html`, `mahasiswa.ht
 
 ![image](https://user-images.githubusercontent.com/55969069/231115470-870c2699-e645-4530-ac46-e62423f358e6.png)
 
+Lalu pada setiap template isikan Tabel seperti berikut.
+
 - Isi `index.html`
 
-```javascript
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
-    <meta name="msapplication-TileColor" content="#0ed3cf">
-    <meta name="theme-color" content="#0ed3cf">
-
-    <meta property="og:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:image:type" content="image/png" />
-
-    <meta property="og:url" content="https://tailwindcomponents.com/component/simple-registersign-up-form/landing" />
-    <meta property="og:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta property="og:description" content="Just a simple responsive sign up form with icons" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TwComponents" />
-    <meta name="twitter:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta name="twitter:description" content="Just a simple responsive sign up form with icons" />
-    <meta name="twitter:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-
-    <title>Simple Register/Sign Up Form by Scott Windon. </title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script type="module" src="../js/fetch.js"></script>
-</head>
-
-<body>
-    <aside
-        class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
-        <div>
-            <div class="-mx-6 px-6 py-4">
-                <a href="#" title="home">
-                    <img src="./img/LOGO ULBI - WIDE DARK.png" class="w-32"
-                        alt="tailus logo">
-                </a>
-            </div>
-
-            <div class="mt-8 text-center">
-                <img src="./img/DMP_1868 - MASTER BIRU.jpg" alt=""
-                    class="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28">
-                    <h5 class="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Dani Ferdinan</h5>
-                    <span class="hidden text-gray-400 lg:block">D4 TI / 2B</span>
-            </div>
-
-            <ul class="space-y-2 tracking-wide mt-8">
-                <li>
-                    <a href="#" aria-label="dashboard"
-                        class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400">
-                        <svg class="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current text-cyan-400 dark:fill-slate-600"></path>
-                            <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z"
-                                class="fill-current text-cyan-200 group-hover:text-cyan-300"></path>
-                            <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current group-hover:text-sky-300"></path>
-                        </svg>
-                        <span class="-mr-1 font-medium">DHS</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="mahasiswa.html"
-                        class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300" fill-rule="evenodd"
-                                d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mahasiswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="matkul.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd"
-                                d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mata Kuliah</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dosen.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Dosen</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-            <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-                <span class="group-hover:text-gray-700">Logout</span>
-            </button>
-        </div>
-    </aside>
-    <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-                <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">DATA DHS</h5>
-                <button class="w-12 h-16 -mr-2 border-r lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                <div class="flex space-x-4">
-                    <!--search bar -->
-                    <div hidden class="md:block">
-                        <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
-                            <span class="absolute left-4 h-6 flex items-center pr-3 border-r border-gray-300">
-                                <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 fill-current"
-                                    viewBox="0 0 35.997 36.004">
-                                    <path id="Icon_awesome-search" data-name="search"
-                                        d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <input type="search" name="leadingIcon" id="leadingIcon" placeholder="Search here"
-                                class="w-full pl-14 pr-4 py-2.5 rounded-xl text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition">
-                        </div>
-                    </div>
-                    <!--/search bar -->
-                    <button aria-label="search"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden">
-                        <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 mx-auto fill-current text-gray-600"
-                            viewBox="0 0 35.997 36.004">
-                            <path id="Icon_awesome-search" data-name="search"
-                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                            </path>
-                        </svg>
-                    </button>
-                    <button aria-label="chat"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                    </button>
-                    <button aria-label="notification"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-12 pt-12 2xl:container">
-            <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"> -->
-
-            <div class="flex flex-col">
-                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                    <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                        <div class="overflow-hidden">
-                            <table id="iniTabel" class="min-w-full text-left text-sm font-medium">
-                                <thead class="border-b font-medium dark:border-neutral-500">
-                                    <tr>
-                                        <th scope="col" class="px-6 py-4">Nama & NPM</th>
-                                        <th scope="col" class="px-6 py-4">PROGRAM STUDI & FAKULTAS</th>
-                                        <th scope="col" class="px-6 py-4">Matkul & Nilai 1</th>
-                                        <th scope="col" class="px-6 py-4">Matkul & Nilai 2</th>
-                                        <th scope="col" class="px-6 py-4">Matkul & Nilai 3</th>
-                                        <th scope="col" class="px-6 py-4">Matkul & Nilai 4</th>
-                                        <!-- <th scope="col" class="px-6 py-4">Handle</th> -->
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- START -->
-                                    <!-- <tr class="border-b dark:border-neutral-500">
-                                        <td class="whitespace-nowrap px-6 py-4 font-medium">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#NAMA#</p>
-                                                <p class="text-xs font-medium text-coolGray-500">#NPM#</p>
-                                            </div>
-                                        </td>
-                                        <td class="whitespace-nowrap px-6 py-4">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#PROGRAM_STUDI#</p>
-                                                <p class="text-xs font-medium text-coolGray-500">#FAKULTAS#</p>
-                                            </div>
-                                        </td>
-                                        <td class="whitespace-nowrap px-6 py-4">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#MATKUL#</p>
-                                                <p class="text-s font-medium text-coolGray-800">Grade: #NILAI#</p>
-                                            </div>
-                                        </td>
-                                        <td class="whitespace-nowrap px-6 py-4">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#MATKUL#</p>
-                                                <p class="text-s font-medium text-coolGray-800">Grade: #NILAI#</p>
-                                            </div>
-                                        </td>
-                                        <td class="whitespace-nowrap px-6 py-4">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#MATKUL#</p>
-                                                <p class="text-s font-medium text-coolGray-800">Grade: #NILAI#</p>
-                                            </div>
-                                        </td>
-                                        <td class="whitespace-nowrap px-6 py-4">
-                                            <div class="w-auto">
-                                                <p class="text-s font-semibold text-coolGray-800">#MATKUL#</p>
-                                                <p class="text-s font-medium text-coolGray-800">Grade: #NILAI#</p>
-                                            </div>
-                                        </td>
-                                    </tr> -->
-                                    <!-- END -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- </div> -->
-        </div>
-    </div>
-</body>
-
-</html>
+```html
+<table id="iniTabel" class="min-w-full text-left text-sm font-medium">
+    <thead class="border-b font-medium dark:border-neutral-500">
+        <tr>
+            <th scope="col" class="px-6 py-4">Nama & NPM</th>
+            <th scope="col" class="px-6 py-4">PROGRAM STUDI & FAKULTAS</th>
+            <th scope="col" class="px-6 py-4">Matkul & Nilai 1</th>
+            <th scope="col" class="px-6 py-4">Matkul & Nilai 2</th>
+            <th scope="col" class="px-6 py-4">Matkul & Nilai 3</th>
+            <th scope="col" class="px-6 py-4">Matkul & Nilai 4</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
 ```
 
 - Isi `mahasiswa.html`
 
-```javascript
-<!DOCTYPE html>
-<html lang="en">
+```html
+<table id="iniTabel" class="min-w-full text-left text-sm font-medium">
+    <thead class="border-b font-medium dark:border-neutral-500">
+        <tr>
+            <th scope="col" class="px-6 py-4">NPM</th>
+            <th scope="col" class="px-6 py-4">Nama</th>
+            <th scope="col" class="px-6 py-4">Fakultas</th>
+            <th scope="col" class="px-6 py-4">Program Studi</th>
+            <th scope="col" class="px-6 py-4">Dosen Wali</th>
+        </tr>
+    </thead>
+    <tbody>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
-    <meta name="msapplication-TileColor" content="#0ed3cf">
-    <meta name="theme-color" content="#0ed3cf">
-
-    <meta property="og:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:image:type" content="image/png" />
-
-    <meta property="og:url" content="https://tailwindcomponents.com/component/simple-registersign-up-form/landing" />
-    <meta property="og:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta property="og:description" content="Just a simple responsive sign up form with icons" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TwComponents" />
-    <meta name="twitter:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta name="twitter:description" content="Just a simple responsive sign up form with icons" />
-    <meta name="twitter:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-
-    <title>Simple Register/Sign Up Form by Scott Windon. </title>
-    <script type="module" src="../js/fetchMahasiswa.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <aside
-        class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
-        <div>
-            <div class="-mx-6 px-6 py-4">
-                <a href="#" title="home">
-                    <img src="./img/LOGO ULBI - WIDE DARK.png" class="w-32"
-                        alt="tailus logo">
-                </a>
-            </div>
-
-            <div class="mt-8 text-center">
-                <img src="./img/DMP_1868 - MASTER BIRU.jpg" alt=""
-                    class="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28">
-                    <h5 class="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Dani Ferdinan</h5>
-                    <span class="hidden text-gray-400 lg:block">D4 TI / 2B</span>
-            </div>
-
-            <ul class="space-y-2 tracking-wide mt-8">
-                <li>
-                    <a href="index.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <!-- <a href="#" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400"> -->
-                        <svg class="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current text-cyan-400 dark:fill-slate-600"></path>
-                            <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z"
-                                class="fill-current text-cyan-200 group-hover:text-cyan-300"></path>
-                            <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current group-hover:text-sky-300"></path>
-                        </svg>
-                        <span class="-mr-1 font-medium">DHS</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400">
-                        <!-- <a href="#" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300" fill-rule="evenodd"
-                                d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mahasiswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="matkul.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd"
-                                d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mata Kuliah</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dosen.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Dosen</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-            <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-                <span class="group-hover:text-gray-700">Logout</span>
-            </button>
-        </div>
-    </aside>
-    <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-                <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">DATA MAHASISWA</h5>
-                <button class="w-12 h-16 -mr-2 border-r lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                <div class="flex space-x-4">
-                    <!--search bar -->
-                    <div hidden class="md:block">
-                        <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
-                            <span class="absolute left-4 h-6 flex items-center pr-3 border-r border-gray-300">
-                                <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 fill-current"
-                                    viewBox="0 0 35.997 36.004">
-                                    <path id="Icon_awesome-search" data-name="search"
-                                        d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <input type="search" name="leadingIcon" id="leadingIcon" placeholder="Search here"
-                                class="w-full pl-14 pr-4 py-2.5 rounded-xl text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition">
-                        </div>
-                    </div>
-                    <!--/search bar -->
-                    <button aria-label="search"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden">
-                        <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 mx-auto fill-current text-gray-600"
-                            viewBox="0 0 35.997 36.004">
-                            <path id="Icon_awesome-search" data-name="search"
-                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                            </path>
-                        </svg>
-                    </button>
-                    <button aria-label="chat"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                    </button>
-                    <button aria-label="notification"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-12 pt-12 2xl:container">
-            <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"> -->
-                
-                <div class="flex flex-col">
-                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                        <div class="overflow-hidden">
-                          <table id="iniTabel" class="min-w-full text-left text-sm font-medium">
-                            <thead class="border-b font-medium dark:border-neutral-500">
-                              <tr>
-                                <th scope="col" class="px-6 py-4">NPM</th>
-                                <th scope="col" class="px-6 py-4">Nama</th>
-                                <th scope="col" class="px-6 py-4">Fakultas</th>
-                                <th scope="col" class="px-6 py-4">Program Studi</th>
-                                <th scope="col" class="px-6 py-4">Dosen Wali</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4 font-medium">#NPM#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#NAMA#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#FAKULTAS#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#PROGRAM_STUDI#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#DOSEN_WALI#</td>
-                              </tr> -->
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-            <!-- </div> -->
-        </div>
-    </div>
-</body>
-
-</html>
+    </tbody>
+</table>
 ```
 
 - Isi `dosen.html`
 
-```javascript
-<!DOCTYPE html>
-<html lang="en">
+```html
+<table id="iniTabel" class="min-w-full text-left text-sm font-medium">
+    <thead class="border-b font-medium dark:border-neutral-500">
+        <tr>
+            <th scope="col" class="px-6 py-4">Kode Dosen</th>
+            <th scope="col" class="px-6 py-4">Nama</th>
+            <th scope="col" class="px-6 py-4">Phone Number</th>
+        </tr>
+    </thead>
+    <tbody>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
-    <meta name="msapplication-TileColor" content="#0ed3cf">
-    <meta name="theme-color" content="#0ed3cf">
-
-    <meta property="og:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:image:type" content="image/png" />
-
-    <meta property="og:url" content="https://tailwindcomponents.com/component/simple-registersign-up-form/landing" />
-    <meta property="og:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta property="og:description" content="Just a simple responsive sign up form with icons" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TwComponents" />
-    <meta name="twitter:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta name="twitter:description" content="Just a simple responsive sign up form with icons" />
-    <meta name="twitter:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-
-    <title>Simple Register/Sign Up Form by Scott Windon. </title>
-    <script type="module" src="../js/fetchDosen.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <aside
-        class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
-        <div>
-            <div class="-mx-6 px-6 py-4">
-                <a href="#" title="home">
-                    <img src="./img/LOGO ULBI - WIDE DARK.png" class="w-32"
-                        alt="tailus logo">
-                </a>
-            </div>
-
-            <div class="mt-8 text-center">
-                <img src="./img/DMP_1868 - MASTER BIRU.jpg" alt=""
-                    class="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28">
-                <h5 class="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Dani Ferdinan</h5>
-                <span class="hidden text-gray-400 lg:block">D4 TI / 2B</span>
-            </div>
-
-            <ul class="space-y-2 tracking-wide mt-8">
-                <li>
-                    <a href="index.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <!-- <a href="#" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400"> -->
-                        <svg class="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current text-cyan-400 dark:fill-slate-600"></path>
-                            <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z"
-                                class="fill-current text-cyan-200 group-hover:text-cyan-300"></path>
-                            <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current group-hover:text-sky-300"></path>
-                        </svg>
-                        <span class="-mr-1 font-medium">DHS</span>
-                    </a>
-                </li>
-                <li>
-                    <!-- <a href="#"
-                        class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400"> -->
-                        <a href="mahasiswa.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300" fill-rule="evenodd"
-                                d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mahasiswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="matkul.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd"
-                                d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mata Kuliah</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dosen.html"
-                        class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400">
-                    <!-- <a href="#" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group"> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Dosen</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-            <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-                <span class="group-hover:text-gray-700">Logout</span>
-            </button>
-        </div>
-    </aside>
-    <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-                <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">DATA DOSEN</h5>
-                <button class="w-12 h-16 -mr-2 border-r lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                <div class="flex space-x-4">
-                    <!--search bar -->
-                    <div hidden class="md:block">
-                        <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
-                            <span class="absolute left-4 h-6 flex items-center pr-3 border-r border-gray-300">
-                                <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 fill-current"
-                                    viewBox="0 0 35.997 36.004">
-                                    <path id="Icon_awesome-search" data-name="search"
-                                        d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <input type="search" name="leadingIcon" id="leadingIcon" placeholder="Search here"
-                                class="w-full pl-14 pr-4 py-2.5 rounded-xl text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition">
-                        </div>
-                    </div>
-                    <!--/search bar -->
-                    <button aria-label="search"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden">
-                        <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 mx-auto fill-current text-gray-600"
-                            viewBox="0 0 35.997 36.004">
-                            <path id="Icon_awesome-search" data-name="search"
-                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                            </path>
-                        </svg>
-                    </button>
-                    <button aria-label="chat"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                    </button>
-                    <button aria-label="notification"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-12 pt-12 2xl:container">
-            <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"> -->
-                
-                <div class="flex flex-col">
-                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                        <div class="overflow-hidden">
-                          <table id="iniTabel" class="min-w-full text-left text-sm font-medium">
-                            <thead class="border-b font-medium dark:border-neutral-500">
-                              <tr>
-                                <th scope="col" class="px-6 py-4">Kode Dosen</th>
-                                <th scope="col" class="px-6 py-4">Nama</th>
-                                <th scope="col" class="px-6 py-4">Phone Number</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4">#KODE#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#NAMA#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#PHONE#</td>
-                              </tr> -->
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-            <!-- </div> -->
-        </div>
-    </div>
-</body>
-
-</html>
+    </tbody>
+</table>
 ```
 
 - Isi `matkul.html`
 
-```javascript
-<!DOCTYPE html>
-<html lang="en">
+```html
+<table id="iniTabel" class="min-w-full text-left text-sm font-medium">
+    <thead class="border-b font-medium dark:border-neutral-500">
+        <tr>
+            <th scope="col" class="px-6 py-4">Kode Matkul</th>
+            <th scope="col" class="px-6 py-4">Nama Matkul</th>
+            <th scope="col" class="px-6 py-4">Dosen Pengampu</th>
+            <th scope="col" class="px-6 py-4">SKS</th>
+        </tr>
+    </thead>
+    <tbody>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ed3cf">
-    <meta name="msapplication-TileColor" content="#0ed3cf">
-    <meta name="theme-color" content="#0ed3cf">
-
-    <meta property="og:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-    <meta property="og:image:width" content="1280" />
-    <meta property="og:image:height" content="640" />
-    <meta property="og:image:type" content="image/png" />
-
-    <meta property="og:url" content="https://tailwindcomponents.com/component/simple-registersign-up-form/landing" />
-    <meta property="og:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta property="og:description" content="Just a simple responsive sign up form with icons" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TwComponents" />
-    <meta name="twitter:title" content="Simple Register/Sign Up Form by Scott Windon" />
-    <meta name="twitter:description" content="Just a simple responsive sign up form with icons" />
-    <meta name="twitter:image"
-        content="http://tailwindcomponents.com/storage/2335/temp66711.png?v=2023-02-20 21:54:06" />
-
-    <title>Simple Register/Sign Up Form by Scott Windon. </title>
-    <script type="module" src="../js/fetchMatkul.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-    <aside
-        class="ml-[-100%] fixed z-10 top-0 pb-3 px-6 w-full flex flex-col justify-between h-screen border-r bg-white transition duration-300 md:w-4/12 lg:ml-0 lg:w-[25%] xl:w-[20%] 2xl:w-[15%]">
-        <div>
-            <div class="-mx-6 px-6 py-4">
-                <a href="#" title="home">
-                    <img src="./img/LOGO ULBI - WIDE DARK.png" class="w-32"
-                        alt="tailus logo">
-                </a>
-            </div>
-
-            <div class="mt-8 text-center">
-                <img src="./img/DMP_1868 - MASTER BIRU.jpg" alt=""
-                    class="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28">
-                    <h5 class="hidden mt-4 text-xl font-semibold text-gray-600 lg:block">Dani Ferdinan</h5>
-                    <span class="hidden text-gray-400 lg:block">D4 TI / 2B</span>
-            </div>
-
-            <ul class="space-y-2 tracking-wide mt-8">
-                <li>
-                    <a href="index.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <!-- <a href="#" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400"> -->
-                        <svg class="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
-                            <path
-                                d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current text-cyan-400 dark:fill-slate-600"></path>
-                            <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z"
-                                class="fill-current text-cyan-200 group-hover:text-cyan-300"></path>
-                            <path d="M13 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-1Z"
-                                class="fill-current group-hover:text-sky-300"></path>
-                        </svg>
-                        <span class="-mr-1 font-medium">DHS</span>
-                    </a>
-                </li>
-                <li>
-                    <!-- <a href="#"
-                        class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400"> -->
-                        <a href="mahasiswa.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300" fill-rule="evenodd"
-                                d="M2 6a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1H8a3 3 0 00-3 3v1.5a1.5 1.5 0 01-3 0V6z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M6 12a2 2 0 012-2h8a2 2 0 012 2v2a2 2 0 01-2 2H2h2a2 2 0 002-2v-2z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mahasiswa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="matkul.html" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl text-white bg-gradient-to-r from-sky-600 to-cyan-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600" fill-rule="evenodd"
-                                d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                                clip-rule="evenodd" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Mata Kuliah</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="dosen.html" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path class="fill-current text-gray-600 group-hover:text-cyan-600"
-                                d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
-                            <path class="fill-current text-gray-300 group-hover:text-cyan-300"
-                                d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z" />
-                        </svg>
-                        <span class="group-hover:text-gray-700">Dosen</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="px-6 -mx-6 pt-4 flex justify-between items-center border-t">
-            <button class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-600 group">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-                <span class="group-hover:text-gray-700">Logout</span>
-            </button>
-        </div>
-    </aside>
-    <div class="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
-        <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
-            <div class="px-6 flex items-center justify-between space-x-4 2xl:container">
-                <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">DATA MATAKULIAH</h5>
-                <button class="w-12 h-16 -mr-2 border-r lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 my-auto" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-                <div class="flex space-x-4">
-                    <!--search bar -->
-                    <div hidden class="md:block">
-                        <div class="relative flex items-center text-gray-400 focus-within:text-cyan-400">
-                            <span class="absolute left-4 h-6 flex items-center pr-3 border-r border-gray-300">
-                                <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 fill-current"
-                                    viewBox="0 0 35.997 36.004">
-                                    <path id="Icon_awesome-search" data-name="search"
-                                        d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                                    </path>
-                                </svg>
-                            </span>
-                            <input type="search" name="leadingIcon" id="leadingIcon" placeholder="Search here"
-                                class="w-full pl-14 pr-4 py-2.5 rounded-xl text-sm text-gray-600 outline-none border border-gray-300 focus:border-cyan-300 transition">
-                        </div>
-                    </div>
-                    <!--/search bar -->
-                    <button aria-label="search"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden">
-                        <svg xmlns="http://ww50w3.org/2000/svg" class="w-4 mx-auto fill-current text-gray-600"
-                            viewBox="0 0 35.997 36.004">
-                            <path id="Icon_awesome-search" data-name="search"
-                                d="M35.508,31.127l-7.01-7.01a1.686,1.686,0,0,0-1.2-.492H26.156a14.618,14.618,0,1,0-2.531,2.531V27.3a1.686,1.686,0,0,0,.492,1.2l7.01,7.01a1.681,1.681,0,0,0,2.384,0l1.99-1.99a1.7,1.7,0,0,0,.007-2.391Zm-20.883-7.5a9,9,0,1,1,9-9A8.995,8.995,0,0,1,14.625,23.625Z">
-                            </path>
-                        </svg>
-                    </button>
-                    <button aria-label="chat"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                        </svg>
-                    </button>
-                    <button aria-label="notification"
-                        class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 m-auto text-gray-600" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="px-12 pt-12 2xl:container">
-            <!-- <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"> -->
-                
-                <div class="flex flex-col">
-                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                      <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-                        <div class="overflow-hidden">
-                          <table id="iniTabel" class="min-w-full text-left text-sm font-medium">
-                            <thead class="border-b font-medium dark:border-neutral-500">
-                              <tr>
-                                <th scope="col" class="px-6 py-4">Kode Matkul</th>
-                                <th scope="col" class="px-6 py-4">Nama Matkul</th>
-                                <th scope="col" class="px-6 py-4">Dosen Pengampu</th>
-                                <th scope="col" class="px-6 py-4">SKS</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <!-- <tr class="border-b dark:border-neutral-500">
-                                <td class="whitespace-nowrap px-6 py-4 font-medium">#KODE#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#NAMA#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#DOSEN#</td>
-                                <td class="whitespace-nowrap px-6 py-4">#SKS#</td>
-                              </tr> -->
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-            <!-- </div> -->
-        </div>
-    </div>
-</body>
-
-</html>
+    </tbody>
+</table>
 ```
 
 foldet `img` dalam folder `template` digunakan untuk menyimpan gambar yang digunakan pada template.
@@ -999,7 +151,7 @@ export let urlAPImahasiswa = "https://ws-dani.herokuapp.com/mahasiswa-all";
 ```
 lalu pada folder `temp` buat folder dengan nama `table.js`.
 
-```javasript
+```javascript
 export let isiTabel =
     `
 <tr class="border-b dark:border-neutral-500">
@@ -1174,25 +326,83 @@ function isiRow(value) {
 }
 ```
 
-Lalu pada folder `js` tambahkan 4 file untuk mendapat 
+Lalu pada folder `js` tambahkan 4 file untuk mendapatkan data dari API dan menempatkannya pada tabel dengan fungsi yang telah dibuat pada folder `controller`. file yang dibuat adalah:
 
-isi dari `getMahasiswa.js`
+- `fetch.js` untuk data DHS
+
+- `fetchMahasiswa.js` untuk data Mahsiswa
+
+- `fetchDosen.js` untuk data Dosen
+
+- `fetchMatkul.js` untuk data Mata Kuliah
+
+isi dari `fetch.js`
 
 ```javascript
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { isiTablePresensi } from "./controller/get.js";
+import { urlAPIdhs } from "./config/url.js";
+get(urlAPIdhs, isiTablePresensi);
+```
+
+isi dari `fetchMahasiswa.js`
+
+```javascript
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { isiTablePresensi } from "./controller/getMahasiswa.js";
+import { urlAPImahasiswa } from "./config/url.js";
+get(urlAPImahasiswa, isiTablePresensi);
 
 ```
 
-isi dari `getDosen.js`
+isi dari `fetchDosen.js`
 
 ```javascript
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { isiTablePresensi } from "./controller/getDosen.js";
+import { urlAPIdosen } from "./config/url.js";
+get(urlAPIdosen, isiTablePresensi);
 
 ```
 
-isi dari `getMatkul.js`
+isi dari `fetchMatkul.js`
 
 ```javascript
+import { get } from "https://bukulapak.github.io/api/process.js";
+import { isiTablePresensi } from "./controller/getMatkul.js";
+import { urlAPImatkul } from "./config/url.js";
+get(urlAPImatkul, isiTablePresensi);
 
 ```
+
+Terakhir kita panggil file Fetch pada setiap template Html. file fetch tersebut kita panggil dengan tambahan param `type="module"`.
+file tersebut kita panggil pada tag `head`.
+
+- Pada file `index.html`
+
+```javascript
+<script type="module" src="../js/fetch.js"></script>
+```
+
+- Pada file `mahasiswa.html`
+
+```javascript
+<script type="module" src="../js/fetchMahasiswa.js"></script>
+```
+
+- Pada file `dosen.html`
+
+```javascript
+<script type="module" src="../js/fetchDosen.js"></script>
+```
+
+- Pada file `matkul.html`
+
+```javascript
+<script type="module" src="../js/fetchMatkul.js"></script>
+```
+
+Dan Terakhir push repositori dan setting github pages nya.
 
 ## URL HEROKU
 https://ws-dani.herokuapp.com/dhs-all
