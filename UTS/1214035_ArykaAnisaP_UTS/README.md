@@ -162,7 +162,6 @@ export let isiTabel =
   ![Screenshot (371)](https://user-images.githubusercontent.com/97519820/230967199-1d4610ac-d43e-48e1-8cf4-34f70042e275.png)
   ![Screenshot (372)](https://user-images.githubusercontent.com/97519820/230967196-4b9f5fc9-1cd7-4b68-acaa-b1115312d2a3.png)
 
-aryka
 
 
 
