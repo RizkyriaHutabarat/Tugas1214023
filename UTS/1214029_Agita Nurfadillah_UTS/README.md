@@ -1,7 +1,6 @@
 Pada week 4, 5, dan 6 kita sudah membuat frontend, backend dan menampilkan frontend & backend. Selanjutnya pada UTS menampilkan hasil pada week 4,5 dan 6 dengan template yang berbeda.
 
 1.Langkah pertama kita membuat repositori baru (pada github ada +new)
-![new repo](https://user-images.githubusercontent.com/104063079/230988368-d1ca9bb4-3a2a-477a-a637-bcec2aeedb35.png)
 
 2.Selanjutnya git clone pada git bash here (klik kanan > Git Bash Here) lalu masukan link repo yang sudah kita buat dengan code :
 
