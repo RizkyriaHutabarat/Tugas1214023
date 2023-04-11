@@ -177,11 +177,11 @@ https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screensho
 ![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20dbdsn.png} )
 # Screenshot Postman
 ## Get Proyek 1
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dbproyek1.png} )
+![image.png]( https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dbproyek1.png )
 ## Get Mahasiswa
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dbmhs.png} )
+![image.png]( https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dbmhs.png )
 ## Get Dosen
-![image.png]( {https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20dbdsn.png} )
+![image.png]( https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20dbdsn.png )
 # Screenshot Frontend
 ## Proyek 1
 ![image.png]( {https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20fe%20pyk1.png} )
