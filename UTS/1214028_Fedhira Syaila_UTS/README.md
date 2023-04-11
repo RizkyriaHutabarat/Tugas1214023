@@ -5,6 +5,7 @@
    ![struct](https://user-images.githubusercontent.com/93858982/230938929-198b51c2-df83-4176-ba01-05b0d4b700c3.png)
 
 3. Membuat folder dan file sesuai dengan gambar dibawah ini
+
    ![folder_be](https://user-images.githubusercontent.com/93858982/230939308-af28ceb9-2cc8-4d39-94d9-2331581e850d.png)
 
 4. Lalu, buatlah function untuk menambahkan data dan mengambil data di mongoDB. Dalam repo backend ini saya membuat function di folder controller dalam file controller.go. Contohnya seperti gambar dibawah ini.
@@ -56,6 +57,7 @@ inimodul "github.com/Fedhira/be_tagihan/module"
 
 15. Jangan lupa untuk selalu lakukan go mod tidy di terminal, lalu ketik go run main.go di terminal untuk melihat apakah datanya sudah bisa tampil atau belum
 16. Jika sudah nanti akan tampil link seperti gambar dibawah ini
+
     ![go_run](https://user-images.githubusercontent.com/93858982/230941002-6f6df9b4-d72d-4160-becf-6d62641c9459.png)
 
 17. Cek dengan url yang sudah kita buat, misalnya saya url /all untuk menampilkan semua data bank, jika berhasil akan tampil semua data seperti gambar dibawah ini
@@ -89,6 +91,7 @@ Jika berhasil akan muncul link Heroku seperti gambar dibawah ini
     ![windmill_template](https://user-images.githubusercontent.com/93858982/230941677-007a56a6-73d1-4ef4-9bbc-1976b56a0b6b.png)
 
 24. Kemudian, membuat folder js terdiri dari 3 folder yaitu temp, controller dan config dan folder template adalah template yang akan kita gunakan
+
     <img width="81" alt="folder_fe" src="https://user-images.githubusercontent.com/93858982/230941761-63fa1c58-209d-4165-8c15-e8d48ce45aaa.png">
 
 25. Lalu, tambahkan code dibawah ini pada file index.html
