@@ -168,9 +168,11 @@ https://aufa-ulbi.herokuapp.com/alldosen
 https://aulianafahrian.github.io/fe-p1/template_baru/public/index.html
 # Screenshot Collection
 ## Collection Proyek 1
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20dbproyek1.png} )
+![image.png]( {https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20dbproyek1.png
+} )
 ## Collection Mahasiswa
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20dbmhs.png} )
+![image.png]( {
+https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20dbmhs.png} )
 ## Collection Dosen
 ![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20dbdsn.png} )
 # Screenshot Postman
@@ -179,10 +181,10 @@ https://aulianafahrian.github.io/fe-p1/template_baru/public/index.html
 ## Get Mahasiswa
 ![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dbmhs.png} )
 ## Get Dosen
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20postman%20dosen.png} )
+![image.png]( {https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20dbdsn.png} )
 # Screenshot Frontend
 ## Proyek 1
-![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20fe%20pyk1.png} )
+![image.png]( {https://raw.githubusercontent.com/aulianafahrian/fe-p1/main/screenshot/Screenshot%20fe%20pyk1.png} )
 
 ## Data Mahasiswa
 ![image.png]( {https://github.com/aulianafahrian/fe-p1/blob/main/screenshot/Screenshot%20fe%20mhs.png} )
