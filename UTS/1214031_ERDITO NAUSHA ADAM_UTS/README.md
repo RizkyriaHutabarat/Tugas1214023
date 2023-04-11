@@ -10,13 +10,13 @@
 |  |  |
 
 ## DAFTAR ISI
-* [ALUR PROSES PENGERJAAN](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#a--alur-proses-pengerjaan)
-* [URL HEROKU](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#b--url-heroku)
-* [URL FRONTEND](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#c--url-frontend)
-* [URL PACKAGE & REPOSITORY](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#d--url-package--repository)
-* [SS MONGODB](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#e--ss-mongodb)
-* [SS POSTMAN DAN FRONTEND](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#f--ss-postman-dan-frontend)
-* [TECH](https://github.com/erditona/FILE-MANAGER/edit/main/README.md#g-tech)
+* [ALUR PROSES PENGERJAAN](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#a--alur-proses-pengerjaan)
+* [URL HEROKU](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#b--url-heroku)
+* [URL FRONTEND](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#c--url-frontend)
+* [URL PACKAGE & REPOSITORY](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#d--url-package--repository)
+* [SS MONGODB](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#e--ss-mongodb)
+* [SS POSTMAN DAN FRONTEND](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#f--ss-postman-dan-frontend)
+* [TECH](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#g-tech)
 
 
 ## A . ALUR PROSES PENGERJAAN
@@ -910,8 +910,8 @@ get(urlAPICamaba, isiTableCamaba);
  Jangan lupa merubah judul pada setiap file, sesuaikan dengan isi table.
 
 #### 4. FINAL
-* Setelah github pages aktif kita bisa langsung mencobanya dengan memanggil url yang terdapat di tabel [URL FRONTEND]()
-* Jika berhasil maka akan muncul seperti gambar yang terdapat pada screenshot tampilan [FRONTEND]()
+* Setelah github pages aktif kita bisa langsung mencobanya dengan memanggil url yang terdapat di tabel [URL FRONTEND](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#c--url-frontend)
+* Jika berhasil maka akan muncul seperti gambar yang terdapat pada screenshot tampilan [FRONTEND](https://github.com/erditona/Pemrog3WebService/blob/main/UTS/1214031_ERDITO%20NAUSHA%20ADAM_UTS/README.md#f--ss-postman-dan-frontend)
 
 
 ## B . URL HEROKU
