@@ -244,4 +244,8 @@ https://stefanymelda.github.io/fe_kuesioner/template/
 ## Screenshot Frontend Github Pages
 
 Hasil Akhir dari Aplikasi yang telah dibuat ke frontend dan di setting dengan github pages.
-![frontend](https://user-images.githubusercontent.com/94597289/230883330-c50c57d6-f0a9-40c1-bcde-c53b397cb2e5.png)
+![frontend](https://user-images.githubusercontent.com/94597289/231031761-0a396f5a-cc6e-49e1-99dc-22f247857d59.png)
+
+![frontend2](https://user-images.githubusercontent.com/94597289/231031837-c65d67e0-4a3e-4f65-b2d9-14c31437db27.png)
+
+![frontend3](https://user-images.githubusercontent.com/94597289/231031909-52bfbee4-b5c8-49b3-a966-dfeedcff8ccb.png)
