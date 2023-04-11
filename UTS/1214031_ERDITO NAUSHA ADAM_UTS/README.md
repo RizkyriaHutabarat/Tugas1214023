@@ -106,6 +106,7 @@
 #### 2. EDIT JS
 
  Untuk folder JS berisi folder dan file seperti gambar berikut:
+ 
  <img width="215" alt="js-fileFolder" src="https://user-images.githubusercontent.com/91595733/231220136-37c62250-5de8-4261-96c9-4764cc870b4c.png">
  
  * Edit File `url.js` dengan kode seperti berikut
