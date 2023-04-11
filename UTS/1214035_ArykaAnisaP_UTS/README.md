@@ -1,5 +1,4 @@
 1. PROSES
-
 - Week 4 (Pembuatan serta pemilihan studi kasus, disini saya menggunakan tema penggajian dimana di dalam mogo.db terdapat databases yang berjudul  Penggejian_db, dimana  di dalamnya terdapat 7 collection, dan salah satu collection yang berjudul uang didalamnya terdapat 17 jumlah data.)
 - Week5 (Membuat boilerplate yang sudah berhasil tersabnung ke heroku dan menampikan json pada browser)
 - Week6 (Membuat sebuah frontend dimana data yang ditampilkan adalah data yang terdapat pada week4)
@@ -161,9 +160,6 @@ export let isiTabel =
   ![Screenshot (370)](https://user-images.githubusercontent.com/97519820/230967205-1eb86d8d-41cd-4dba-af1a-cf6494e12a79.png)
   ![Screenshot (371)](https://user-images.githubusercontent.com/97519820/230967199-1d4610ac-d43e-48e1-8cf4-34f70042e275.png)
   ![Screenshot (372)](https://user-images.githubusercontent.com/97519820/230967196-4b9f5fc9-1cd7-4b68-acaa-b1115312d2a3.png)
-
-
-
 
 
    
