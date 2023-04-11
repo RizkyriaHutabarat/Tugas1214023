@@ -41,6 +41,17 @@ Pada file url.go/boiler plate ditambahkan perintah berikut :
 }
 ```
 
+Selanjutnya lakukan push ke heroku, dengan perintah berikut :
+
+```
+git push heroku main
+```
+
+Maka akan muncul link yang apabila dibuka seperti ini :
+![d](https://user-images.githubusercontent.com/125644091/231106328-99ebf326-ed5f-4fdc-90a5-c118c5fdea8c.png)
+
+Lakukan pengecekan apakah semua function berhasil
+
 Selanjutnya membuat new repository dengan judul "uts_perwalian", lalu masukkan folder template yang sudah dicari ke dalamnya
 ![a](https://user-images.githubusercontent.com/125644091/231030205-adb05f2a-fbb3-4555-b1a2-34b3f9a3ed46.png)
 
