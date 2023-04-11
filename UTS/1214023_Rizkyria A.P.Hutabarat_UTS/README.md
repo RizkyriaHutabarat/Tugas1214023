@@ -18,19 +18,19 @@ go get github.com/rizkyriahutabarat/be_profile
 
 jika sudah berhasil, kemudian kita mengimport pakage pada `controller/coba.go` dibawah ini
 
-    ```go
-
+```bash
 inimodel "github.com/rizkyriahutabarat/be_profile/model"
 inimodul "github.com/rizkyriahutabarat/be_profile/module"
+```
 
-````
 setelah tahap ini selesai, kemudia import fungsi berikut ini dengan memanggil fungsi GetAllPresensi yang sudah masuk ke pakage
-```go
+
+```bash
 func GetAllProfile(c *fiber.Ctx) error {
 	nl := inimodul.GetAllProfile(config.Ulbimongoconn, "profile")
 	return c.JSON(nl)
 }
-````
+```
 
 Kemudian rapikan dengan cara mengetikan perintah
 
