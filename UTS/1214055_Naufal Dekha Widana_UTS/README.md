@@ -150,6 +150,8 @@ get(urlAPI, isiTablePresensi);
 lalu setelah itu coba lakukan test untuk mengecek apakah data yang kita inginkan telah
 ditampilkan pada github page yang telah dibuat
 
+# URL Github Pages
+https://naufaldekha002.github.io/frontend-penelitian/template
 # URL Heroku
 https://penelitian-tugas.herokuapp.com/semua
 
