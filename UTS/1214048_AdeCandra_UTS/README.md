@@ -4,21 +4,26 @@
 2. setelah itu membuat repostori untuk menyimpan backend sesuai tema masing-masing. tema saya kali ini surat menyurat, jadi saya membuat repo bernama surat
 3. selanjutnya kita melakukan git clone dari boiler plate yang di berikan pada week5
 4. dalam tugas week4 sebelumnya terdapat struct yang sudah saya buat seperti berikut:
-   ![struct]()
-   ![struct2]()
+   ![struct](https://user-images.githubusercontent.com/98501335/233393887-804ba2cf-8bfd-425b-ada6-cc01c26995d0.png)
+   ![struct2](https://user-images.githubusercontent.com/98501335/233394241-a8652947-d1af-4d08-8b25-1781621ccc4f.png)
 5. buat sruktur folder seperti berikut:
-   ![struktur folder backend]()
+   ![list_struct](https://user-images.githubusercontent.com/98501335/233394428-915242b1-baaa-448c-9f92-5511ad17f568.png)
 6. selanjutnya kita pindah ke controller, disini kita membuat function insert, get, dan GetAll untuk mengambil data dari MongoDB, berikut contoh source code dari controller.go:
-   ![insert]()
-   ![Get]()
-   ![GetAll]()
+   ![connect mongoDB](https://user-images.githubusercontent.com/98501335/233396126-63770aea-fc22-4d0a-ad82-f184e1774064.png)
+
+   ![function insert](https://user-images.githubusercontent.com/98501335/233395538-a2e87781-733c-4a18-bbd9-4489aa8595c3.png)
+
+   ![function get](https://user-images.githubusercontent.com/98501335/233395635-38f322af-cede-49f1-a048-6f80ee1c5216.png)
+   ![function GetAll](https://user-images.githubusercontent.com/98501335/233395838-2beb4b53-8a13-4553-8cd4-16dd84ca3ee3.png)
+
 7. setelah itu, kita membuat test insert, Get, dan GetAll pada file dev_test.go. berikut contoh source code dari dev_test.go
-   ![testInsert]()
-   ![testGet]()
-   ![testGetAll]()
-8. jangan lupa melakukan go test pada terminal, agar test insert yang sudah kita buat dapat masuk ke MongoDB
-   ![gotest]()
-   ![MongoDB]()
+   ![testinsert](https://user-images.githubusercontent.com/98501335/233396686-6f31971e-57df-4821-aa5a-df697e031025.png)
+   ![testGet](https://user-images.githubusercontent.com/98501335/233396790-fa15b90c-7f88-40fc-8442-824f6fe133f2.png)
+
+   ![testGetAll](https://user-images.githubusercontent.com/98501335/233396918-8bc5003b-414c-49f0-8724-65eb4c6409a7.png)
+
+8. jangan lupa melakukan go test pada terminal, agar test insert yang sudah kita buat dapat masuk ke MongoDB. bukti telah masuk ke MongoDB:
+   ![MongoDB](https://user-images.githubusercontent.com/98501335/233397153-80b78873-63f1-4f4d-9f98-44c2b83a159a.png)
 9. jika sudah tidak terjadi error pada backend, maka selanjutnya listing package dengan cara:
 
 ```
@@ -61,15 +66,16 @@ page.Get("/disposisi", controller.GetAllDisposisi)
 ```
 
 5. setelah semua berjalan, lanjut ke membuat frontend surat, dalam membuat frontend kita harus membuat repostori baru di github kita.
-   ![repo GitHub]()
+   ![fe_surat](https://user-images.githubusercontent.com/98501335/233397674-035fc16d-089f-440c-826c-d716f8bfe1ae.png)
 6. setelah kita git clone agar repo dapat terhubung dengan directori kita.
 7. selanjutnya cari template yang akan digunakan, disini saya menggunakan template tailwaind css.
-   ![template]()
+   ![template](https://user-images.githubusercontent.com/98501335/233397930-3d32bce9-8a87-41f6-b958-5a3543b11820.png)
 8. download dan masukan template ke folder frontend yang telah di buat.
-   ![masukan]()
+   ![folder-fe_surat](https://user-images.githubusercontent.com/98501335/233398286-3681cd16-91ed-485d-865e-c7cd332cfc3a.png)
+
 9. masuk ke vs code.
 10. setelah itu kita buat folder js yang berisi:
-    ![js]()
+    ![folder_js](https://user-images.githubusercontent.com/98501335/233398804-6d908126-1097-4069-96f0-7151eed46b6b.png)
 11. terdapat folder config yang berisi url.js. berikut source code di dalam url.js
 
 ```
@@ -1464,3 +1470,60 @@ get(urlAPIDisposisi, isi_TabelDis);
 
 </html>
 ```
+
+# URL HEROKU
+
+```
+https://pemrog3-ulbi.herokuapp.com/surat
+```
+
+# URL FRONTEND
+
+```
+https://adecandra12.github.io/fe_surat/template/public/tables.html
+
+https://adecandra12.github.io/fe_surat/template/public/tables2.html
+```
+
+# SS MongoDB
+
+- surat
+  ![Mongo_surat](https://user-images.githubusercontent.com/98501335/233414750-a57096dd-0822-46c2-96fc-ee68d7e9d087.png)
+
+- disposisi
+  ![Mongo_disposisi](https://user-images.githubusercontent.com/98501335/233414775-ffc11fc5-01e3-4039-84e3-f3e427718b50.png)
+
+- status
+  ![Mongo_status](https://user-images.githubusercontent.com/98501335/233415586-b160545f-5e4b-4922-86d5-dedd092d7261.png)
+
+- pengirim
+  ![Mongo_pengirim](https://user-images.githubusercontent.com/98501335/233415601-51edf084-757a-4240-8be3-b6e200549e37.png)
+
+- penerima
+  ![Mongo_penerima](https://user-images.githubusercontent.com/98501335/233415613-0fabd609-2529-4f08-931a-468eb0c023da.png)
+
+# SS POSTMAN
+
+- surat
+  ![p_surat](https://user-images.githubusercontent.com/98501335/233415898-e568801e-ac10-49e9-85bf-66544dc65822.png)
+
+- disposisi
+  ![p_disposisi](https://user-images.githubusercontent.com/98501335/233415912-0b133688-1b3d-44dd-a593-20402051c4b8.png)
+
+# SS FRONTEND
+
+- surat
+
+![fe_surat1](https://user-images.githubusercontent.com/98501335/233417914-5a9f9d2d-84d4-4427-a554-6483ca49ac8e.png)
+
+![fe_surat2](https://user-images.githubusercontent.com/98501335/233417932-e4f3d085-8399-4522-a81d-e3405859da0e.png)
+
+![fe_surat3](https://user-images.githubusercontent.com/98501335/233417955-dcc4f645-af6f-41e0-9779-269279656ec5.png)
+
+- disposisi
+
+![fe_disposisi1](https://user-images.githubusercontent.com/98501335/233418174-3793727e-5828-4929-8289-c3f7e7a1e979.png)
+
+![fe_disposisi2](https://user-images.githubusercontent.com/98501335/233418188-86db2da4-0bca-4e6b-aebb-151e80051981.png)
+
+![fe_disposisi3](https://user-images.githubusercontent.com/98501335/233418220-92413bc2-9d23-4193-a31e-7e6ef9a31fae.png)
