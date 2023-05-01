@@ -29,11 +29,11 @@ func InsertOneDoc(db string, collection string, doc interface{}) (insertedID int
 	return insertResult.InsertedID
 }
 
-func InsertSurat(NoSurat int, Header string, Tujuan string, Kodepos int, pengirim Pengirim, penerima Penerima) (InsertedID interface{}) {
+func InsertSurat(NoSurat int, Status Status, Perihal string, Kodepos Kodepos, pengirim Pengirim, penerima Penerima) (InsertedID interface{}) {
 	var surat Surat
 	surat.No_surat = NoSurat
-	surat.Kepala_surat = Header
-	surat.Alamat_tujuan = Tujuan
+	surat.Status_surat = Status
+	surat.Perihal = Perihal
 	surat.Kode_pos = Kodepos
 	surat.Pengirim = pengirim
 	surat.Penerima = penerima
