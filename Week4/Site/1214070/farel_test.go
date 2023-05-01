@@ -21,7 +21,7 @@ func TestInsertPresensi(t *testing.T) {
 }
 
 func TestGetKaryawanFromPhoneNumber(t *testing.T) {
-	phonenumber := "68122221814"
+	phonenumber := "083821157026"
 	biodata:=GetKaryawanFromPhoneNumber(phonenumber)
 	fmt.Println(biodata)
 }
