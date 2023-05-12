@@ -9,6 +9,15 @@
 |                |                                     |
 
 # Screnshoot
+* Insert Presensi
+
+<img width="960" alt="Fe-Insert-Done" src="https://github.com/erditona/Pemrog3WebService/assets/91595733/46ef3e61-ceb7-4641-a876-9a98c5b4402f">
+
+
+* List Presensi
+
+<img width="960" alt="HomePageTampilData" src="https://github.com/erditona/Pemrog3WebService/assets/91595733/b8847736-260c-4de9-97d7-52d68bfc31d3">
+
 
 # Url Github Pages
 
