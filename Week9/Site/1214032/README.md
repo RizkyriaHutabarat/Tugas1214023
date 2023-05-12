@@ -6,7 +6,7 @@ Insert Presesnsi
 List Presensi
 ![Screenshot 2023-05-12 165624](https://github.com/alnoviantirs/be_presensi/assets/125644091/1c6d53ec-3d47-4146-b8f5-4f0282e90aee)
 
-# Url Github Pages
+# URL Github Pages
 
 Insert Presensi = https://alnoviantirs.github.io/be_presensi/template/insert.html
 
