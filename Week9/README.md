@@ -1,9 +1,9 @@
 # Insert Pada Aplikasi Frontend
 
-Masih menggunakan repo yang sama pada Chapter06 yaitu repo untuk frontend
+Untuk frontend masih menggunakan repo yang sama pada Chapter06
 
 # Backend Package
-Buka project backend pada VScode atau GoLand
+Buka project backend presensi pada VScode atau GoLand
 Pada folder module/{nama file}.go tambahkan code berikut (jika function sudah ada, replace saja)
 ```go
 func InsertPresensi(db *mongo.Database, col string, long float64, lat float64, lokasi string, phonenumber string, checkin string, biodata model.Karyawan) (insertedID primitive.ObjectID, err error) {
@@ -80,10 +80,11 @@ Jalankan testing
 ```go
 go test -run ^TestInsertPresensi$
 ```
+Cek pada MongoDB apakah data test sudah masuk.
 Kemudian lakukan git tag dan go list agar package terupdate, tutor [disini](https://github.com/indrariksa/WS/tree/main/Week4#publish-package)
 
 # Boilerplate
-Buka project boilerplate pada VScode atau GoLand, pada terminal ketikkan perintah go get package backend yang sebelumnya kita update
+Buka project boilerplate pada VScode atau GoLand, pada terminal ketikkan perintah go get package backend (project latihan di atas yang sudah dilakukan go list)
 ```go
 go get {url package backend di pkg.go.dev}
 
@@ -121,12 +122,13 @@ func InsertData(c *fiber.Ctx) error {
 	})
 }
 ```
-inimodul dan inimodel merupakan alias dari import package backend, bisa saja berbeda dengan kalian
+Kemudian lakukan import URL backend latihan kalian masing-masing, contoh di bawah inimodul dan inimodel merupakan alias dari import package backend, bisa saja berbeda dengan kalian
+
 ![image](https://user-images.githubusercontent.com/26703717/228791775-9a76c3a7-10db-443b-af9e-0ff07a39f80d.png)
 
 Function InsertData di atas digunakan untuk memproses data yang dikirimkan dari sebuah request POST untuk melakukan insert data ke dalam database MongoDB dengan menggunakan method InsertPresensi yang ada di package inimodul. Data yang di-insert adalah data presensi yang terdiri dari informasi lokasi (longitude, latitude, location), nomor telepon (phone_number), waktu check-in (checkin), dan biodata karyawan (biodata). Jika proses insert data berhasil dilakukan, maka function akan mengembalikan status OK dan pesan berhasil disimpan beserta inserted ID. Namun, jika terjadi error selama proses insert data, function akan mengembalikan status Internal Server Error dan pesan error tersebut.
 
-Pada file url.go di folder url kita tambah path baru
+Pada file url.go di folder url kita tambah endpoint baru
 ```go
 page.Post("/ins", controller.InsertData)
 ```
@@ -183,7 +185,7 @@ Selanjutnya kita buat file post.js di dalam folder js/controller yang berisi.
 ```js
 import { postData } from "https://bukulapak.github.io/api/process.js";
 import { onClick, getValue } from "https://bukulapak.github.io/element/process.js";
-import { Urlpost, AmbilResponse} from "../config/url_post.js";
+import { urlPOST, AmbilResponse} from "../config/url_post.js";
 
 
 function pushData(){
@@ -206,7 +208,7 @@ function pushData(){
             hari_kerja : hari_kerja.split(",")
         }
     }
-    postData(Urlpost, data, AmbilResponse);
+    postData(urlPOST, data, AmbilResponse);
 
 }
 
@@ -228,7 +230,7 @@ Setelah data berhasil dikirim, fungsi AmbilResponse() akan dipanggil untuk mengo
 ## url_post.js
 Selanjutnya kita buat file url_post.js di dalam folder js/config yang berisi.
 ```js
-export let urlPOST = "https://ws-ulbi.herokuapp.com/ins"
+export let urlPOST = "URLHEROKU/ins"
 
 export function AmbilResponse(result) {
     console.log(result); //menampilkan response API pada console
@@ -236,7 +238,7 @@ export function AmbilResponse(result) {
     window.location.reload(); //reload halaman setelah klik ok pada alert
 }
 ```
-* urlPOST: Variabel ini menyimpan URL endpoint dari API yang akan dipanggil saat melakukan POST request.
+* urlPOST: Variabel ini menyimpan URL endpoint dari API yang akan dipanggil saat melakukan POST request. (Diisi dengan endpoint heroku kalian masing-masing)
 * AmbilResponse(result): Fungsi ini merupakan callback function yang akan dipanggil setelah mendapatkan respons dari API. Fungsi ini akan melakukan tiga hal:
   * Menampilkan respons API pada console melalui console.log(result).
   * Menampilkan respons API pada alert melalui alert(result.message).
@@ -244,8 +246,8 @@ export function AmbilResponse(result) {
 
 ## Inisialisasi id
 Cari element dari input dan buttonnya kemudian kita beri id
-* pada tag <button> beri id="button"
-* pada tag <input> beri id sesuai dengan json pada mongoDB
+* pada tag button Save beri id="button"
+* pada tag input beri id sesuai dengan json pada mongoDB
 
 ![image](https://user-images.githubusercontent.com/26703717/228778229-2ec1a71c-630c-4b54-9ecc-87ae75e3eda5.png)
     
@@ -260,4 +262,5 @@ Klik button Save, maka akan muncul alert
 Data yang diinputkan berhasil masuk
 ![image](https://user-images.githubusercontent.com/26703717/228782155-9be0020a-5416-4e7e-b403-fb52d4939ed6.png)
 
-
+## Kumpulkan 
+Buat file README.md dan masukkan skrinsut hasil frontend, url github pages frontend presensi di folder Week9/Site/{NPM}
