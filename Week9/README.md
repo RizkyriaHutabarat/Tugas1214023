@@ -1,6 +1,6 @@
 # Insert Pada Aplikasi Frontend
 
-Untuk frontend masih menggunakan repo yang sama pada Chapter06
+Untuk frontend masih menggunakan repo yang sama pada Week6
 
 # Backend Package
 Buka project backend presensi pada VScode atau GoLand
