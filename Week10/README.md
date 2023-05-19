@@ -464,8 +464,8 @@ Panjang ya kode nya? Copy paste dari file post.js aja cuma sedikit kok perubahan
 
 - Lalu kita buat file delete.js di dalam folder js/controller yaitu sebagai berikut
 ```js
-function deleteData() {
-    var presensiId = "#IDHAPUS#";
+function deleteData(IDHAPUS) {
+    var presensiId = IDHAPUS;
     var target_url = "https://ws-ulbi.herokuapp.com/delete/" + presensiId;
 
     var requestOptions = {
