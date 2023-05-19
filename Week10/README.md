@@ -345,13 +345,13 @@ Pada tahap ini testing update dan delete data pada postman sudah aman, selanjutn
 - Pada file index.html tambah header tabel Aksi pada line 298
 ![image](https://github.com/indrariksa/WS/assets/26703717/b20b698d-04f7-4f0e-aea7-c9ddfc7590a2)
 - Pada file js/temp/table.js tambahkan 2 button baru untuk edit dan delete (berikut gambar dan codenya)
-![image](https://github.com/indrariksa/WS/assets/26703717/9ad80766-fb2b-4ff5-8837-9ef29c54df80)
+![image](https://github.com/indrariksa/WS/assets/26703717/3e6abb32-fe8d-451c-ad1a-58885d6bb7ac)
 ```html
 <th class="whitespace-nowrap pr-4 bg-white text-sm font-medium text-coolGray-800">
-<a type="button" href="edit.html?presensiId=#IDEDIT#" data-presensi-id="#IDHAPUS#"> Edit
+<a type="button" href="edit.html?presensiId=#IDEDIT#"> Edit
 </a>
 |
-<button type="button" id="del_button" onclick="deleteData()"> Delete
+<button type="button" id="del_button" onclick="deleteData('#IDHAPUS#')"> Delete
 </button>
 </th>
 ```
@@ -465,7 +465,7 @@ Panjang ya kode nya? Copy paste dari file post.js aja cuma sedikit kok perubahan
 - Lalu kita buat file delete.js di dalam folder js/controller yaitu sebagai berikut
 ```js
 function deleteData() {
-    var presensiId = document.querySelector('a[data-presensi-id]').getAttribute('data-presensi-id');
+    var presensiId = "#IDHAPUS#";
     var target_url = "https://ws-ulbi.herokuapp.com/delete/" + presensiId;
 
     var requestOptions = {
@@ -483,8 +483,7 @@ function deleteData() {
 }
 ```
 > Kode fungsi `deleteData()` yang akan dipanggil saat tombol delete diklik. Berikut adalah penjelasan dari kode tersebut:
-> - Mencari elemen `<a>` yang memiliki atribut `data-presensi-id` menggunakan metode `querySelector`.
-> - Mengambil nilai dari atribut `data-presensi-id` menggunakan metode `getAttribute` dan menyimpannya dalam variabel `presensiId`.
+> - Variabel `presensiId` di dapat dari #IDHAPUS# yang berasal dari get.js yang memiliki value id (_id).
 > - Membentuk URL target dengan menggabungkan nilai `presensiId` ke dalam URL dasar.
 > - Membuat objek `requestOptions` yang berisi konfigurasi untuk metode `fetch`, dengan menggunakan metode HTTP DELETE.
 > - Mengirim permintaan DELETE ke URL target menggunakan metode `fetch`.
