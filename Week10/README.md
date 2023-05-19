@@ -286,7 +286,7 @@ git push heroku main
 
 Jika sudah, kita coba testing terlebih dahulu via postman sebelum kita implementasi pada frontend. 
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/a5ef201e-3519-4e66-a5f6-7b3947cf1a17)
+![image](https://github.com/indrariksa/WS/assets/26703717/8599d60b-dbbe-4929-a85b-6930886533af)
 
 Pada Postman gunakan method PUT, masukkan endpoint webservice (untuk ID disesuaikan saja dengan yang ada pada MongoDB), kemudian pilih Body->raw->JSON isikan dengan kode berikut
 ```json
@@ -316,11 +316,11 @@ Pada Postman gunakan method PUT, masukkan endpoint webservice (untuk ID disesuai
 
 Klik send, maka response terlihat seperti berikut
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/2fb14e62-ffdd-4f51-acae-a4d427ef0cb3)
+![image](https://github.com/indrariksa/WS/assets/26703717/e71182ce-4334-421e-a2b7-16e098b82c22)
 
 Kemudian coba kalian cek pada Postman menggunakan method Get dan kemudian cari berdasarkan ID yang kita ubah saat melakukan update, bisa dilihat data berhasil berubah. (pastikan endpoint **URLHEROKU/presensi/ID** berjalan untuk melanjutkan pada frontend)
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/78d63120-ac2c-407c-9603-1107a0adfba3)
+![image](https://github.com/indrariksa/WS/assets/26703717/4de81588-d3e0-4617-96c1-ec66c489c470)
 
 Pada tahap ini update data sudah aman, selanjutnya kita akan melakukan delete data.
 
