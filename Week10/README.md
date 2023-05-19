@@ -327,15 +327,15 @@ Pada tahap ini update data sudah aman, selanjutnya kita akan melakukan delete da
 - Delete
 
 Pada Postman gunakan method DELETE, masukkan endpoint webservice (untuk ID disesuaikan saja dengan yang ada pada MongoDB atau gunakan ID yang sudah digunakan pada method update sebelumnya)
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/47fd5c83-720b-4a1a-ac2a-a724204ef797)
+![image](https://github.com/indrariksa/WS/assets/26703717/73db8875-fe03-4f19-ad93-31a6606bfa49)
 
 Klik send, maka response terlihat seperti berikut
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/b87dce60-5221-4be0-954d-6040f5282309)
+![image](https://github.com/indrariksa/WS/assets/26703717/ce2d4f88-fe2b-4f14-a213-aca4fc3e2603)
 
 Kemudian coba kalian cek pada Postman menggunakan method Get dan kemudian cari berdasarkan ID yang sudah kita hapus, seharusnya datanya sudah tidak ada seperti gambar di bawah. (pastikan endpoint **URLHEROKU/presensi/ID** berjalan untuk melanjutkan pada frontend)
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/4a96fc98-169f-4672-9c6a-8ed327749078)
+![image](https://github.com/indrariksa/WS/assets/26703717/c3ce0f20-962d-4083-86ff-f6a70224f1cf)
 
 Pada tahap ini testing update dan delete data pada postman sudah aman, selanjutnya kita akan melakukan PUT dan DELETE data pada frontend
 
@@ -343,9 +343,9 @@ Pada tahap ini testing update dan delete data pada postman sudah aman, selanjutn
 
 ### Ubah pada tampilan GET
 - Pada file index.html tambah header tabel Aksi pada line 298
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/07ffd8ae-0740-4242-ba08-91804ba143ef)
+![image](https://github.com/indrariksa/WS/assets/26703717/b20b698d-04f7-4f0e-aea7-c9ddfc7590a2)
 - Pada file js/temp/table.js tambahkan 2 button baru untuk edit dan delete (berikut gambar dan codenya)
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/3d733172-4143-4a1a-83fa-1c25192b4df7)
+![image](https://github.com/indrariksa/WS/assets/26703717/9ad80766-fb2b-4ff5-8837-9ef29c54df80)
 ```html
 <th class="whitespace-nowrap pr-4 bg-white text-sm font-medium text-coolGray-800">
 <a type="button" href="edit.html?presensiId=#IDEDIT#" data-presensi-id="#IDHAPUS#"> Edit
@@ -356,27 +356,27 @@ Pada tahap ini testing update dan delete data pada postman sudah aman, selanjutn
 </th>
 ```
 - Pada file js/controller/get.js tambahkan code untuk mengidentifikasi ID untuk button edit dan delete
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/6c482577-fa2e-4e16-aa3a-a34eff1fc694)
+![image](https://github.com/indrariksa/WS/assets/26703717/91c8f562-a16d-4bcd-9420-5226752dd152)
 - Kemudian lakukan push pada repo frontend masing-masing
 - Jika sudah, seharusnya terdapat 2 tombol Edit dan Delete pada halaman index.html
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/e7263b67-1745-40d1-8e42-e5bdc6ca7c7e)
+![image](https://github.com/indrariksa/WS/assets/26703717/b6b36003-866d-4304-abd3-3948194cba0a)
 
 ### Update Data
 Selanjutnya kita masuk ke materi untuk mengubah data
 
 - Download file edit.html [DISINI](https://github.com/indrariksa/WS/tree/main/Week10/edit.html), kemudian simpan pada frontend kalian masing-masing di dalam folder template
 - Kemudian pada baris di bawah sebelum penutup tag body tambahkan 2 kode berikut pada line 414 dan 415
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/7358fb91-f52b-4a0d-a965-46357fc14b92)
+![image](https://github.com/indrariksa/WS/assets/26703717/58d2c6a3-11ac-474f-b31f-2b141a9f8491)
 - Kemudian buat file url_get_detail.js pada folder js/config (**NOTE : UNTUK URL HEROKU SESUAIKAN DENGAN URL KALIAN MASING-MASING**)
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/e37f8b13-e5c1-4862-ab49-7c6e99decbb3)
+![image](https://github.com/indrariksa/WS/assets/26703717/4120ed76-142a-4e9e-8a68-fc193e9c38eb)
 > Fungsi kode yang Anda berikan digunakan untuk mendapatkan parameter `presensiId` dari URL dan membangun URL pengambilan (`urlFetch`) dengan menggunakan nilai tersebut. Berikut adalah penjelasan singkat tentang kode tersebut:
 > 1. `const urlParams = new URLSearchParams(window.location.search);`: Kode ini membuat objek `URLSearchParams` dari `window.location.search`, yang mewakili string query parameter di URL saat ini.
 > 2. `const presensiId = urlParams.get('presensiId');`: Kode ini menggunakan objek `urlParams` untuk mendapatkan nilai dari parameter query `'presensiId'`. Jadi jika URL-nya adalah `https://example.com/?presensiId=12345`, maka nilai `presensiId` akan menjadi `'12345'`.
 > 3. `export let urlFetch = 'https://ws-ulbi.herokuapp.com/presensi/' + presensiId;`: Kode ini membangun URL pengambilan (`urlFetch`) dengan menggabungkan string `'https://ws-ulbi.herokuapp.com/presensi/'` dengan nilai `presensiId` yang telah diperoleh dari parameter query. Hasilnya akan menjadi URL lengkap yang akan digunakan dalam permintaan fetch.
 > Dengan kode tersebut, kalian dapat menggunakan `urlFetch` untuk mengirim permintaan fetch ke URL yang dibangun dengan parameter `presensiId`.
 - Selanjutnya kita akan menampilkan data pada form di bawah
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/5c3bebda-41be-467e-8d03-e1624ebbf9ae)
+![image](https://github.com/indrariksa/WS/assets/26703717/555308ec-3ab6-4ba6-936a-ac8b45a83144)
 
 Untuk dapat menampilkannya, kita perlu membuat file edit.js pada folder js/controller yaitu sebagai berikut
 ```js
@@ -422,15 +422,15 @@ Untuk dapat menampilkannya, kita perlu membuat file edit.js pada folder js/contr
 > 6. `function getNestedValue(obj, path, index, property) { ... }`: Ini adalah fungsi yang digunakan untuk mendapatkan nilai yang terdalam di dalam objek berdasarkan jalur yang diberikan. Fungsi ini menggunakan metode `reduce` dan `split` untuk mengakses nilai yang terdalam sesuai dengan jalur yang diberikan. Jika nilai tersebut adalah array dan memiliki indeks dan properti yang sesuai, maka nilai tersebut akan dikembalikan. Jika tidak, nilai tersebut akan dikembalikan secara langsung.
 > Dengan menggunakan fungsi `isiData` dan `getNestedValue`, nilai-nilai dari objek `results` akan dipetakan ke elemen-elemen input yang sesuai berdasarkan pemetaan yang diberikan.
 - Sabar guys belum beres, kita harus buat file fetch_edit.js pada folder js yaitu
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/33fffed0-a46a-4ff4-9c6b-e1ca3530871d)
+![image](https://github.com/indrariksa/WS/assets/26703717/4db5f56c-9b66-498c-8f8f-bc1a99b9be91)
 - Jika sudah, kalian bisa push ke repo dan heroku masing-masing kemudian coba running, jangan lupa lakukan hard refresh. Maka hasilnya akan terisi data pada formnya ketika kalian mengklik tombol edit (kalau belum bisa coba baca lagi yang teliti barangkali ada yang terlewat)
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/82a51db2-9acc-4ad0-ab8c-120b339d58c4)
+![image](https://github.com/indrariksa/WS/assets/26703717/fd8d0256-2bf5-4e00-827e-6cf3f318bc76)
 
 - Eitssss belum bisa update ya, kita baru menampilkan data pada form saja, so kita belum membuat function untuk mengubah data yang dikirim dari form ya
 ---
 
 - Yuk lanjut, selanjutnya kita akan membuat function untuk melakukan edit data. Buat file put.js pada folder js/controller seperti berikut
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/53a2e904-db33-44a2-b1eb-a78d38bc3c3b)
+![image](https://github.com/indrariksa/WS/assets/26703717/dd75ebf5-2bc0-4e9a-8f6c-12521d50cfad)
 
 Panjang ya kode nya? Copy paste dari file post.js aja cuma sedikit kok perubahannya, teliti ya jangan asal copy paste.
 > Kode di atas adalah implementasi fungsi untuk mengirim data melalui metode PUT ke sebuah URL. Berikut adalah penjelasa untuk kode di atas:
@@ -446,24 +446,19 @@ Panjang ya kode nya? Copy paste dari file post.js aja cuma sedikit kok perubahan
 
 - Selanjutnya buat file url_put.js pada folder js/config seperti berikut (**NOTE : UNTUK URL HEROKU SESUAIKAN DENGAN URL KALIAN MASING-MASING**)
 
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/7818ea1e-d5c0-41ca-a69a-2b24d21e2501)
+![image](https://github.com/indrariksa/WS/assets/26703717/96a5f5c7-e470-4c4f-ae06-aef3acb993c2)
 
 - Jika sudah, kalian bisa push ke repo dan heroku masing-masing kemudian coba running, jangan lupa lakukan hard refresh. 
 - Coba lakukan update data seperti gambar di bawah
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/5b4cb1ae-a522-43cf-bb95-20fa4d51a732)
+![image](https://github.com/indrariksa/WS/assets/26703717/fce93201-cd35-4e11-835e-7784d1a15efc)
 
 ---
 
 **Masih semangat kan? kita lanjut ke delete data**
 ### Delete Data
 
-<!-- - Buka project boilerplate, kemudian buka file cors.go dan tambahkan pada bagian AllowMethods untuk method DELETE, karena jika tidak menambahkan ini pada CORS maka seluruh method delete tidak akan bekerja
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/2d77bfe1-c61a-4e19-81f9-b025e273f119)
-
-- Lakukan push pada repo dan heroku masing-masing -->
-
 - Buka kembali file index.html, kita lakukan import file delete.js
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/271ebb73-780a-445e-8acf-352221030b52)
+![image](https://github.com/indrariksa/WS/assets/26703717/27b30228-5cf8-461f-a396-d64021b54723)
 > * Membuat elemen tombol delete dengan id del_button dan menetapkan fungsi deleteData() sebagai event handler menggunakan atribut onclick.
 > * Ketika tombol delete diklik, fungsi deleteData() akan dipanggil untuk menghapus data.
 
@@ -502,13 +497,13 @@ function deleteData() {
 > Disini kita tidak lagi menggunakan import modul fetch seperti pada get all untuk menampilkan seluruh data serta get detail untuk edit
 
 - Jika sudah, push ke repo masing-masing dan lakukan hard refresh, kemudian bisa dicoba klik tombol delete dan lihat seharusnya data yang dipilih sudah terhapus
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/1a6f1a57-61b6-4ba1-ab92-58446b43c4d4)
+![image](https://github.com/indrariksa/WS/assets/26703717/770e32b2-9536-44fb-9a45-9e170787864c)
 
 - Seharusnya kalian tidak bisa melakukan delete data, coba solve permasalahan ini agar dapat melakukan delete data
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/24241c16-9c3c-47d0-bafb-ce64773ac19e)
+![image](https://github.com/indrariksa/WS/assets/26703717/abe06ba5-a496-4b04-a9f1-b0afe1d64865)
 
 - Jika sudah diperbaiki seharusnya data dapat terhapus
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/57b88d08-bede-4af2-a96f-4c1f2edb09f5)
+![image](https://github.com/indrariksa/WS/assets/26703717/9b699ec0-8dd8-4d71-b926-794a0c0af15c)
 
 ## Kumpulkan 
 Buat file README.md dan masukkan skrinsut hasil frontend update dan delete, url github pages frontend presensi di folder Week10/Site/{NPM}
