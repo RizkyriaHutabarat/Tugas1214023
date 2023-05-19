@@ -1,4 +1,4 @@
-# SS DATA
+# SS UPDATE DATA
 
 ![Screenshot (468)](https://github.com/dimasardnt6/fe_presensi/assets/94734096/26f0db2c-9914-449f-a24e-8915cad0f0c7)
 
