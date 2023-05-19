@@ -124,7 +124,7 @@ Pada setiap bagian yang akan diisi dengan data memiliki penanda pagar (#) dan di
 
 # 2. URL Heroku
 
-https://marlinapp.herokuapp.com/bap
+https://lubisapp.herokuapp.com/bap
 
 ---
 
