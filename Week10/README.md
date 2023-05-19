@@ -364,7 +364,7 @@ Pada tahap ini testing update dan delete data pada postman sudah aman, selanjutn
 ### Update Data
 Selanjutnya kita masuk ke materi untuk mengubah data
 
-- Download file edit.html [DISINI](https://github.com/indrariksa/WS/tree/main/Week9/edit.html), kemudian simpan pada frontend kalian masing-masing di dalam folder template
+- Download file edit.html [DISINI](https://github.com/indrariksa/WS/tree/main/Week10/edit.html), kemudian simpan pada frontend kalian masing-masing di dalam folder template
 - Kemudian pada baris di bawah sebelum penutup tag body tambahkan 2 kode berikut pada line 414 dan 415
 ![image](https://github.com/indrariksa/tes_ws/assets/26703717/7358fb91-f52b-4a0d-a965-46357fc14b92)
 - Kemudian buat file url_get_detail.js pada folder js/config (**NOTE : UNTUK URL HEROKU SESUAIKAN DENGAN URL KALIAN MASING-MASING**)
