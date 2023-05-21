@@ -154,7 +154,7 @@ setelah tahap ini selesai makan hasil browser seperti ini :
 
 # 2. Link URL Heroku
 
-https://rizkyria.herokuapp.com/allprofile
+https://hutabarat.herokuapp.com/allprofile
 
 # 3. Link URL Frontend
 
