@@ -42,6 +42,11 @@ page.Get("/docs/*", swagger.HandlerDefault)
 ```
 Di atas kita akan menampilkan swagger pada endpoint `docs` menggunakan method GET
 
+Jangan lupa tambahkan import
+```sh
+import "github.com/gofiber/swagger" // swagger handler
+```
+
 3. Jika sudah, kita harus melakukan perintah swag init kembali untuk menggenerate `Swagger Specification`
 ```sh
 swag init
