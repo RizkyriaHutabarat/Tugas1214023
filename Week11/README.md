@@ -67,6 +67,56 @@ Jika berhasil, kalian akan melihat 3 file yang terupdate di dalam folder docs. F
 1. Buka Project Backend, kemudian kita cari struct pada folder model/type.go, kemudian kita copy semua code di atas dan paste pada Project Boilerplate di folder controller dan buat file bernama struct.go (nama package samakan dengan file coba.go yang ada pada file controller)
 ![image](https://github.com/indrariksa/WS/assets/26703717/b7cea6bc-a7ee-4556-b442-68efc64dd7d3)
 
+```go
+package controller
+
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
+
+type Karyawan struct {
+	ID          primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama        string             `bson:"nama,omitempty" json:"nama,omitempty"`
+	PhoneNumber string             `bson:"phone_number,omitempty" json:"phone_number,omitempty"`
+	Jabatan     string             `bson:"jabatan,omitempty" json:"jabatan,omitempty"`
+	Jam_kerja   []JamKerja         `bson:"jam_kerja,omitempty" json:"jam_kerja,omitempty"`
+	Hari_kerja  []string           `bson:"hari_kerja,omitempty" json:"hari_kerja,omitempty"`
+}
+
+type JamKerja struct {
+	Durasi     int      `bson:"durasi,omitempty" json:"durasi,omitempty"`
+	Jam_masuk  string   `bson:"jam_masuk,omitempty" json:"jam_masuk,omitempty"`
+	Jam_keluar string   `bson:"jam_keluar,omitempty" json:"jam_keluar,omitempty"`
+	Gmt        int      `bson:"gmt,omitempty" json:"gmt,omitempty"`
+	Hari       []string `bson:"hari,omitempty" json:"hari,omitempty"`
+	Shift      int      `bson:"shift,omitempty" json:"shift,omitempty"`
+	Piket_tim  string   `bson:"piket_tim,omitempty" json:"piket_tim,omitempty"`
+}
+
+type Presensi struct {
+	ID           primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Longitude    float64            `bson:"longitude,omitempty" json:"longitude,omitempty"`
+	Latitude     float64            `bson:"latitude,omitempty" json:"latitude,omitempty"`
+	Location     string             `bson:"location,omitempty" json:"location,omitempty"`
+	Phone_number string             `bson:"phone_number,omitempty" json:"phone_number,omitempty"`
+	Datetime     primitive.DateTime `bson:"datetime,omitempty" json:"datetime,omitempty"`
+	Checkin      string             `bson:"checkin,omitempty" json:"checkin,omitempty"`
+	Biodata      Karyawan           `bson:"biodata,omitempty" json:"biodata,omitempty"`
+}
+
+type Lokasi struct {
+	ID       primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Nama     string             `bson:"nama,omitempty" json:"nama,omitempty"`
+	Batas    Geometry           `bson:"batas,omitempty" json:"batas,omitempty"`
+	Kategori string             `bson:"kategori,omitempty" json:"kategori,omitempty"`
+}
+
+type Geometry struct {
+	Type        string      `json:"type" bson:"type"`
+	Coordinates interface{} `json:"coordinates" bson:"coordinates"`
+}
+```
+
 2. Pada project Boilerplate tambahkan anotasi berikut pada file coba.go di atas function GetAllPresensi
 ![image](https://github.com/indrariksa/WS/assets/26703717/3271310b-f15c-4eb0-8d57-7d0a546533cc)
 
