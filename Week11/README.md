@@ -160,7 +160,7 @@ Untuk ujicoba menggunakan SwaggerUI bisa klik pada Tombol `Try it out` kemudian 
 6. Sampai disini kita berhasil membuat contoh dokumentasi dengan method GET (Get All)
 7. Selanjutnya kita akan membuat untuk mendapatkan data berdasarkan parameter ID
 8. Buka file coba.go kemudian tambah anotasi berikut di atas function GetPresensiID
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/c9cdb0e5-cb9c-429f-b16e-4f4b7e654373)
+![image](https://github.com/indrariksa/WS/assets/26703717/f318d400-b1e1-4732-9d7a-9bd1772c56dc)
 
 ```sh
 // GetPresensiID godoc
@@ -184,7 +184,7 @@ Untuk ujicoba menggunakan SwaggerUI bisa klik pada Tombol `Try it out` kemudian 
 > - @Router: Menentukan rute URL untuk endpoint ini, yaitu `/presensi/{id}` dengan metode HTTP GET.
 
 9. Lakukan perintah `swag init` pada terminal, push ke repo github dan heroku, kemudian buka base URL heroku kalian dengan menambahan endpoint /docs (pada gambar di bawah terlihat sudah ada untuk Get By ID)
-![image](https://github.com/indrariksa/tes_ws/assets/26703717/c3886818-664f-4a66-ba73-6337312a4a43)
+![image](https://github.com/indrariksa/WS/assets/26703717/04eac3d6-67d3-49c1-a41b-bc28fa251468)
 
 Untuk ujicoba menggunakan SwaggerUI bisa klik pada Tombol `Try it out` masukkan ID kemudian pilih `Execute`, bisa dilihat data berhasil ditampilkan dengan response code 200
 ![image](https://github.com/indrariksa/WS/assets/26703717/64936e25-d17c-4490-b84f-ab45c20793c0)
