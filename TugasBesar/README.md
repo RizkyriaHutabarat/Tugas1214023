@@ -48,12 +48,14 @@ Tugas besar ini dirancang untuk melatih kemampuan mahasiswa dalam membuat fronte
 - Bahasa pemrograman Frontend bisa menggunakan JavaScript + HTML seperti yang sudah dipraktekkan sebelumnya, atau juga bisa menggunakan Framework JavaScript
 - Database diperbolehkan menggunakan selain MongoDB (Dengan catatan tidak boleh berada di localhost / local)
 - Dokumentasi API menggunakan Swagger
-- Implementasikan validasi input pada data di sisi server (API server) atau pada sisi frontend untuk memastikan data yang diterima sesuai dengan format yang diharapkan.
+- Implementasikan validasi input (misal : kolom nama wajib diisi, format kolom email yang harus sesuai, dll) pada data di sisi server (API server) atau pada sisi frontend untuk memastikan data yang diterima sesuai dengan format yang diharapkan.
 - Terdapat alert message ketika melakukan insert, update, delete pada frontend.
 - Nilai tambah jika terdapat fitur atau apapun yang belum pernah dipelajari di kelas (Bisa berupa implementasi register dan login pada frontend ,autentikasi (contoh: JWT), otorisasi, enkripsi data, dll). Dapat kalian jelaskan hal ini ketika presentasi.
 - Buat PPT terkait pendahuluan, alur aplikasi yang dibuat dan database. (Tidak perlu memasukkan koding pada PPT)
-- Presentasi di pertemuan minggu ke-14
+- Membuat dokumen dalam bentuk pdf (diagram erd database, printscreen semua output untuk masing-masing endpoint baik pada server API (Go Lang) maupun client/frontend) serta berikan penjelasan setiap langkah yang kalian lakukan (setiap penjelasan alur proses tidak boleh mirip dengan kelompok lain, jika terdapat kemiripan maka mahasiswa yang bersangkutan mendapat nilai 0). Note: Disarankan menggunakan daftar isi
+- Presentasi di pertemuan UAS (Asesmen)
 - Nama kelompok dan judul dikumpulkan pada Folder WS/TugasBesar/KELOMPOK.md
+- Menyertakan link atau url repo backend, boilerplate, frontend. (Bisa menyusul)
 
 ---
 Selamat mengerjakan tugas besar!!
