@@ -1,49 +1,88 @@
 ## Anggota Kelompok dan Judul
 
-Kel 1 (Novi, Fedhira)
+> Kel 1 (Novi, Fedhira)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 2 (Fatwa, Aufa)
+> Kel 2 (Fatwa, Aufa)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 3 (Dirga, Kia)
+> Kel 3 (Dirga, Kia)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 4 (Erdito, Naufal)
+> Kel 4 (Erdito, Naufal)
+
 JUDUL : 
-LINK REPO BACKEND : 
+
+LINK REPO BACKEND :
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 5 (Ade, Farel)
+> Kel 5 (Ade, Farel)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 6 (Dimas, Marlina)
+> Kel 6 (Dimas, Marlina)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 7 (Agita, Juwita)
+> Kel 7 (Agita, Juwita)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
+
 ---
-Kel 8 (Aryka, Dani)
+> Kel 8 (Aryka, Dani)
+
 JUDUL : 
+
 LINK REPO BACKEND : 
+
 LINK REPO BOILERPLATE :
+
 LINK REPO FRONTEND :
