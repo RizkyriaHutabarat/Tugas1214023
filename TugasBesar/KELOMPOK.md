@@ -35,7 +35,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 4 (Erdito, Naufal)
 
-JUDUL : 
+JUDUL : Penerimaan Mahasiswa Baru
 
 LINK REPO BACKEND :
 
