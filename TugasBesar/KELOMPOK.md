@@ -13,7 +13,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 2 (Fatwa, Aufa)
 
-JUDUL : 
+JUDUL : PROYEK TI
 
 LINK REPO BACKEND : 
 
@@ -35,7 +35,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 4 (Erdito, Naufal)
 
-JUDUL : 
+JUDUL : Penerimaan Mahasiswa Baru
 
 LINK REPO BACKEND :
 
@@ -46,7 +46,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 5 (Ade, Farel)
 
-JUDUL : 
+JUDUL : Monitoring Orang Tua
 
 LINK REPO BACKEND : 
 
@@ -57,7 +57,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 6 (Dimas, Marlina)
 
-JUDUL : 
+JUDUL : Antrian Puskesmas
 
 LINK REPO BACKEND : 
 
@@ -79,7 +79,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 8 (Aryka, Dani)
 
-JUDUL : 
+JUDUL : Daftar Hasil Studi
 
 LINK REPO BACKEND : 
 
