@@ -24,7 +24,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 3 (Dirga, Kia)
 
-JUDUL : 
+JUDUL : Nilai Mahasiswa
 
 LINK REPO BACKEND : 
 
