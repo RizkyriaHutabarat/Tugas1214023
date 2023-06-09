@@ -68,7 +68,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 7 (Agita, Juwita)
 
-JUDUL : 
+JUDUL : Kuesioner
 
 LINK REPO BACKEND : 
 
