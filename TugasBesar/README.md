@@ -53,7 +53,7 @@ Tugas besar ini dirancang untuk melatih kemampuan mahasiswa dalam membuat fronte
 - Nilai tambah jika terdapat fitur atau apapun yang belum pernah dipelajari di kelas (Bisa berupa implementasi register dan login pada frontend ,autentikasi (contoh: JWT), otorisasi, enkripsi data, dll). Dapat kalian jelaskan hal ini ketika presentasi.
 - Buat PPT terkait pendahuluan, alur aplikasi yang dibuat dan database. (Tidak perlu memasukkan koding pada PPT)
 - Membuat dokumen dalam bentuk pdf (diagram erd database, printscreen semua output untuk masing-masing endpoint baik pada server API (Go Lang) maupun client/frontend) serta berikan penjelasan setiap langkah yang kalian lakukan (setiap penjelasan alur proses tidak boleh mirip dengan kelompok lain, jika terdapat kemiripan maka mahasiswa yang bersangkutan mendapat nilai 0). Note: Disarankan menggunakan daftar isi
-- Presentasi di pertemuan UAS (Asesmen)
+- Presentasi di pertemuan ke-14
 - Nama kelompok dan judul dikumpulkan pada Folder WS/TugasBesar/KELOMPOK.md
 - Menyertakan link atau url repo backend, boilerplate, frontend pada Folder WS/TugasBesar/KELOMPOK.md. (Bisa menyusul)
 
