@@ -13,7 +13,7 @@ LINK REPO FRONTEND :
 ---
 > Kel 2 (Fatwa, Aufa)
 
-JUDUL : 
+JUDUL : PROYEK TI
 
 LINK REPO BACKEND : 
 
